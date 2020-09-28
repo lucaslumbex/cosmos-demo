@@ -10,7 +10,7 @@
 import AuthLayout from "../../components/layout/AuthLayout";
 export default {
   name: "Login",
-  components: { AuthLayout }
+  components: { AuthLayout}
 };
 </script>
 

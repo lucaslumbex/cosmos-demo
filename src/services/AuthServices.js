@@ -1,8 +1,29 @@
-import BaseService from "./BaseService";
-import AppUtils from "../utils/baseUtils/AppUtils";
+import BaseService from "@/services/BaseService";
+import AppUtils from "@/utils/baseUtils/AppUtils";
 
 class AuthServices extends BaseService {
-  login(
+  registrationInit(
+    payload,
+    successAction,
+    loaderType,
+    errorType,
+    showSuccessMessage,
+    successCondition,
+    getErrorMessage
+  ) {
+    return this.makePostRequest(
+      AppUtils.urls.auth.REGISTRATION_INIT,
+      payload,
+      successAction,
+      loaderType,
+      errorType,
+      showSuccessMessage,
+      successCondition,
+      getErrorMessage
+    );
+  }
+
+  logIn(
     payload,
     successAction,
     loaderType,
@@ -13,6 +34,26 @@ class AuthServices extends BaseService {
   ) {
     return this.makePostRequest(
       AppUtils.urls.auth.LOGIN,
+      payload,
+      successAction,
+      loaderType,
+      errorType,
+      showSuccessMessage,
+      successCondition,
+      getErrorMessage
+    );
+  }
+  registrationComplete(
+    payload,
+    successAction,
+    loaderType,
+    errorType,
+    showSuccessMessage,
+    successCondition,
+    getErrorMessage
+  ) {
+    return this.makePostRequest(
+      AppUtils.urls.auth.REGISTRATION_COMPLETE,
       payload,
       successAction,
       loaderType,

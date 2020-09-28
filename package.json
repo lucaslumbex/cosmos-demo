@@ -10,7 +10,9 @@
   "dependencies": {
     "@braid/vue-formulate": "^2.4.4",
     "aws-sdk": "^2.761.0",
+    "axios": "^0.20.0",
     "bootstrap-vue": "^2.17.3",
+    "copy-to-clipboard": "^3.3.1",
     "core-js": "^3.6.5",
     "date-fns": "^2.16.1",
     "vodal": "^2.4.0",

@@ -37,6 +37,9 @@ class StoreUtils {
       GET_ACTIVE_ROUTE: "router/getActiveRoute"
     },
     auth: {},
+    form: {
+      GET_FORM_BODY: "form/getFormBody"
+    },
     user: {
       GET_USER_EMAIL: "userAccount/getUserEmail"
     }

@@ -1,0 +1,59 @@
+.registration-header{
+    padding-top: 40px;
+
+}
+.registration-header .header-logo{
+    text-align: center;
+}
+.registration-header .header-text{
+    text-align: center;
+    color: #DD5F5F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+.registration-header .header-sub-text{
+    text-align: center;
+    color: #5D5D5D;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+}
+.reg-footer{}
+.reg-footer .parent{
+    display: flex;
+    width: 88%;
+    margin: auto;
+    padding-top: 16px;
+}
+.reg-footer .parent .create-account0{
+    width: 45%;
+    height: 50px;
+}
+.reg-footer .parent .create-account1{
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    padding-top: 6px;
+
+}
+.reg-footer .parent .create-account2{
+    width: 45%;
+    height: 50px;
+}
+.reg-footer .parent .create-account1 p{
+    font-size: 12px;
+    color: #DD5F5F;
+    font-family: 'Mulish', sans-serif;
+}
+.reg-footer .footer-text{
+    text-align: center;
+    font-size: 12px;
+}
+.reg-footer .footer-text .footer-sub-text-one {
+    color: #262626;
+}
+.reg-footer .footer-text .footer-sub-text-two{
+    color:#DD5F5F ;
+}

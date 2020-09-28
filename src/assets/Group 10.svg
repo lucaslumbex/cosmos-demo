@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137.392" height="51.29" viewBox="0 0 137.392 51.29">
+  <defs>
+    <filter id="Path_17" x="10.559" y="0" width="46.224" height="50.408" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_16" x="0" y="21.167" width="44.108" height="30.123" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_10" data-name="Group 10" transform="translate(-52.978 -140.819)">
+    <g id="Group_5" data-name="Group 5" transform="translate(57.478 145.319)">
+      <g transform="matrix(1, 0, 0, 1, -4.5, -4.5)" filter="url(#Path_17)">
+        <path id="Path_17-2" data-name="Path 17" d="M3.49,7.251,25.355.528s5.54-2.2,7.006,2.383,3.173,11.844,3.173,11.844.3,5.3-5.753,5.926S8.66,22.882,2.5,16.349,3.49,7.251,3.49,7.251Z" transform="matrix(-0.54, 0.84, -0.84, -0.54, 52.28, 16.1)" fill="#969696"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -4.5, -4.5)" filter="url(#Path_16)">
+        <path id="Path_16-2" data-name="Path 16" d="M647.108,536.707l21.528,6.5s5.45,2.143,6.936-2.428,3.231-11.806,3.231-11.806.34-5.278-5.63-5.846-20.831-2.013-26.964,4.536S647.108,536.707,647.108,536.707Z" transform="translate(-639.2 -496.92)" fill="#ca0302"/>
+      </g>
+    </g>
+    <text id="Rubies" transform="translate(101.37 175.418)" fill="#707070" font-size="28" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">RUBIES</tspan></text>
+    <text id="Business_Account" data-name="Business Account" transform="translate(127.279 184.042)" fill="#707070" font-size="7" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Business Account</tspan></text>
+  </g>
+</svg>
