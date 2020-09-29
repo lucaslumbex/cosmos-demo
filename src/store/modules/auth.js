@@ -1,7 +1,7 @@
-import LoaderUtils from "@/utils/baseUtils/LoaderUtils";
-import StoreUtils from "@/utils/baseUtils/StoreUtils";
-import RouterUtils from "@/utils/baseUtils/RouterUtils";
-import AuthServices from "@/services/AuthServices";
+import LoaderUtils from "../../utils/baseUtils/LoaderUtils";
+import StoreUtils from "../../utils/baseUtils/StoreUtils";
+import RouterUtils from "../../utils/baseUtils/RouterUtils";
+import AuthServices from "../../services/AuthServices";
 const authService = new AuthServices();
 
 export const namespaced = true;
@@ -45,7 +45,6 @@ export const actions = {
     let formBody = StoreUtils.rootGetters(
       StoreUtils.getters.form.GET_FORM_BODY
     );
-    console.log("formbody =>", formBody);
     let payload = {
       userID: formBody.userID,
       password: formBody.password
@@ -68,7 +67,6 @@ export const actions = {
       StoreUtils.getters.form.GET_FORM_BODY
     );
 
-    console.log("formbody =>", formBody);
     let payload = {
       countryCode: "234",
       email: formBody.email,
@@ -76,9 +74,8 @@ export const actions = {
       lastName: formBody.lastName,
       phone: formBody.phone
     };
-    console.log("payload =>", payload);
+
     let successAction = responseData => {
-      console.log("response =>", responseData);
       //save users info in the store
       StoreUtils.commit("form/INCREASE_FORM_STAGE_BY_ONE");
 
@@ -112,10 +109,10 @@ export const actions = {
       source: "WEB"
     };
     console.log("payload =>", payload);
-    let successAction = responseData => {
+    let successAction = () => {
       //save users info in the store
      // StoreUtils.commit("user/SET_USER_INFO", responseData);
-      console.log(responseData)
+     //  console.log(responseData)
 
       //route the user to the dashboard
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);

@@ -1,5 +1,5 @@
-import BaseService from "@/services/BaseService";
-import AppUtils from "@/utils/baseUtils/AppUtils";
+import BaseService from "../services/BaseService";
+import AppUtils from "../utils/baseUtils/AppUtils";
 
 class AuthServices extends BaseService {
   registrationInit(
