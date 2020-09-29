@@ -34,7 +34,8 @@ export const mutations = {
   },
 
   BUILD_FORM_BODY(state, payload) {
-    state.formBody = { ...state.formBody, ...payload };
+    state.formBody = { ...state.formBody, ...payload }
+    console.log(state.formBody)
   },
   RESET_FORM_BODY(state) {
     state.formBody = {};

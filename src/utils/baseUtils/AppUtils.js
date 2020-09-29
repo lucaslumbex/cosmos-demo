@@ -5,6 +5,9 @@ class AppUtils {
   static urls = {
     auth: {
       LOGIN: ""
+    },
+    company: {
+      CREATE_COMPANY: "/createcompany"
     }
   };
 

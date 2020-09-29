@@ -28,6 +28,7 @@ class StoreUtils {
       SET_USER_INFO: "user/setUserInfo"
     },
     company: {
+      COMPANY_ADDRESS: "company/toCompanyAddress",
       SET_NEW_COMPANY: "company/setNewCompany"
     }
   };
@@ -37,8 +38,14 @@ class StoreUtils {
       GET_ACTIVE_ROUTE: "router/getActiveRoute"
     },
     auth: {},
+    form: {
+      GET_FORM_BODY: "form/getFormBody"
+    },
     user: {
       GET_USER_EMAIL: "userAccount/getUserEmail"
+    },
+    company: {
+      GET_USER_INFO: "company/getUserInfo"
     }
   };
 

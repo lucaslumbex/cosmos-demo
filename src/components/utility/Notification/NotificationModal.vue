@@ -73,7 +73,7 @@
 
 <script>
 import { mapState } from "vuex";
-import NotificationUtils from "../../../utils/BaseUtils/NotificationUtils";
+import NotificationUtils from "../../../utils/baseUtils/NotificationUtils";
 
 export default {
   name: "NotificationModal",
