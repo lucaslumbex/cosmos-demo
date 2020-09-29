@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import StoreUtils from "@/utils/baseUtils/StoreUtils";
+import StoreUtils from "../../utils/baseUtils/StoreUtils";
 
 export default {
   name: "RegistrationInitForm",

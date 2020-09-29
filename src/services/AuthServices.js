@@ -23,7 +23,7 @@ class AuthServices extends BaseService {
     );
   }
 
-  logIn(
+  login(
     payload,
     successAction,
     loaderType,
