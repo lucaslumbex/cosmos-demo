@@ -45,7 +45,6 @@ export const actions = {
     let formBody = StoreUtils.rootGetters(
       StoreUtils.getters.form.GET_FORM_BODY
     );
-    console.log("formbody =>", formBody);
     let payload = {
       userID: formBody.userID,
       password: formBody.password
@@ -61,14 +60,13 @@ export const actions = {
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
     };
 
-    authService.logIn(payload, successAction, LoaderUtils.types.BLOCKING);
+    authService.login(payload, successAction, LoaderUtils.types.BLOCKING);
   },
   registrationInit() {
     let formBody = StoreUtils.rootGetters(
       StoreUtils.getters.form.GET_FORM_BODY
     );
 
-    console.log("formbody =>", formBody);
     let payload = {
       countryCode: "234",
       email: formBody.email,
@@ -76,7 +74,6 @@ export const actions = {
       lastName: formBody.lastName,
       phone: formBody.phone
     };
-    console.log("payload =>", payload);
     let successAction = responseData => {
       console.log("response =>", responseData);
       //save users info in the store
@@ -101,7 +98,7 @@ export const actions = {
       StoreUtils.getters.form.GET_FORM_BODY
     );
 
-    console.log("formbody =>", formBody);
+    // console.log("formbody =>", formBody);
     let payload = {
       token: formBody.token,
       password: formBody.password,
@@ -114,8 +111,8 @@ export const actions = {
     console.log("payload =>", payload);
     let successAction = responseData => {
       //save users info in the store
-     // StoreUtils.commit("user/SET_USER_INFO", responseData);
-      console.log(responseData)
+      // StoreUtils.commit("user/SET_USER_INFO", responseData);
+      console.log(responseData);
 
       //route the user to the dashboard
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
