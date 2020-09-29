@@ -1,4 +1,3 @@
-import StoreUtils from "./StoreUtils";
 import NotificationUtils from "./NotificationUtils";
 
 class ErrorUtils {

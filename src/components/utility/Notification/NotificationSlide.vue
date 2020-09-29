@@ -16,7 +16,7 @@
 
 <script>
 import { mapActions } from "vuex";
-import NotificationUtils from "../../../utils/BaseUtils/NotificationUtils";
+import NotificationUtils from "@/utils/baseUtils/NotificationUtils";
 
 export default {
   props: {
