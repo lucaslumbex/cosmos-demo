@@ -60,7 +60,7 @@ export const actions = {
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
     };
 
-    authService.login(payload, successAction, LoaderUtils.types.BLOCKING);
+    authService.login(payload, successAction, LoaderUtils.types.COMPONENT);
   },
   registrationInit() {
     let formBody = StoreUtils.rootGetters(
