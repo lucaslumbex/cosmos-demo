@@ -4,9 +4,10 @@ import StoreUtils from "./StoreUtils";
 class AppUtils {
   static urls = {
     auth: {
-      LOGIN: "/login",
-      REGISTRATION_INIT: "/enrollmentInitiate",
-      REGISTRATION_COMPLETE: "/enrollmentComplete"
+      LOGIN: ""
+    },
+    company: {
+      CREATE_COMPANY: "/createcompany"
     }
   };
 
