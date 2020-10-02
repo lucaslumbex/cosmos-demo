@@ -74,7 +74,6 @@
 <script>
 import { mapState } from "vuex";
 import NotificationUtils from "../../../utils/baseUtils/NotificationUtils";
-
 export default {
   name: "NotificationModal",
   computed: {
@@ -84,7 +83,7 @@ export default {
     }
   },
   methods: {
-    closeNotificationModal(_notification) {
+    closeNotificationModal() {
       NotificationUtils.closeNotificationModal();
     }
   }

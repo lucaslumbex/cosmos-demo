@@ -58,7 +58,7 @@ class BaseService {
     LoaderUtils.showLoading(true, loader);
     let apiResponse = await this.apiClient.post(url, JSON.stringify(payload));
     LoaderUtils.showLoading(false, loader);
-    console.log("apiResponse ==>", apiResponse);
+    // console.log("apiResponse ==>", apiResponse);
 
     if (successCondition(apiResponse.data)) {
       if (showSuccessMessage) {
