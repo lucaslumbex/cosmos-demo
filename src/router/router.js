@@ -4,6 +4,9 @@ import Login from "../views/auth/Login";
 import Registration from "../views/auth/Registration";
 import Dashboard from "../views/Dashboard";
 
+import CreateCompany from "../views/company/CreateCompany";
+import AddCompany from "../views/company/AddCompany";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -11,6 +14,21 @@ const routes = [
     path: "/dashboard",
     name: "dashboard",
     component: Dashboard
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    component: Dashboard
+  },
+  {
+    path: "/add-company",
+    name: "addCompany",
+    component: AddCompany
+  },
+  {
+    path: "/create-company",
+    name: "createCompany",
+    component: CreateCompany
   },
   {
     path: "/registration",
