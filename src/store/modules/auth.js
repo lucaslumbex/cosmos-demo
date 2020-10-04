@@ -46,7 +46,8 @@ export const actions = {
       StoreUtils.getters.form.GET_FORM_BODY
     );
     let payload = {
-      userID: formBody.userID,
+      username: formBody.Username,
+      countryCode: "234",
       password: formBody.password
     };
     let successAction = responseData => {

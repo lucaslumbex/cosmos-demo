@@ -57,3 +57,40 @@
 .reg-footer .footer-text .footer-sub-text-two{
     color:#DD5F5F ;
 }
+.login-header {
+    padding-top: 40px;
+}
+.login-header .login-logo{
+    text-align: center;
+}
+.login-header .login-header-text{
+    text-align: center;
+    color: #DD5F5F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 0;
+
+}
+.login-header .login-header-sub-text {
+    text-align: center;
+    color: #5D5D5D;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+}
+.forgot-password-text {
+    text-align: right; !important;
+    font-size: 10px; !important;
+    color: #DD5F5F  ; !important;
+
+
+}
+.forgot-password-text a {
+    text-align: right; !important;
+    font-size: 12px; !important;
+    color: #DD5F5F  ; !important;
+
+
+}
+
