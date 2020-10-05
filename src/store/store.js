@@ -7,11 +7,16 @@ import * as notification from "./modules/baseModules/notification.js";
 import * as table from "./modules/baseModules/table.js";
 import * as form from "./modules/baseModules/form.js";
 import * as auth from "./modules/auth.js";
+import * as user from "./modules/user.js";
+
+import * as company from "./modules/company.js";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
+    company,
+    user,
     auth,
     router,
     loader,

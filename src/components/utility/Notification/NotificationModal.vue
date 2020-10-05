@@ -73,7 +73,7 @@
 
 <script>
 import { mapState } from "vuex";
-import NotificationUtils from "@/utils/baseUtils/NotificationUtils";
+import NotificationUtils from "../../../utils/baseUtils/NotificationUtils";
 export default {
   name: "NotificationModal",
   computed: {
@@ -83,9 +83,8 @@ export default {
     }
   },
   methods: {
-    // eslint-disable-next-line no-unused-vars
-   closeNotificationModal(notification) {
-     NotificationUtils.closeNotificationModal();
+    closeNotificationModal() {
+      NotificationUtils.closeNotificationModal();
     }
   }
 };

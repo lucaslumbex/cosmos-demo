@@ -1,14 +1,15 @@
 <template>
   <AppLayout>
-    <div>A fire Dashboard Page</div>
+    <DashboardCard></DashboardCard>
   </AppLayout>
 </template>
 
 <script>
 import AppLayout from "../components/layout/AppLayout";
+import DashboardCard from "../components/dashboard/DashboardCard";
 export default {
   name: "Dashboard",
-  components: { AppLayout }
+  components: { DashboardCard, AppLayout }
 };
 </script>
 

@@ -7,36 +7,19 @@ const authService = new AuthServices();
 export const namespaced = true;
 
 export const state = {
-  userOptions: {
-    requestId: "",
-    categoryId: "",
-    insuranceCompanyId: "",
-    username: ""
-  },
-  bankName: ""
+  userInfo: {
+  }
 };
 
 export const getters = {
-  getUserOptions: state => {
-    return state.userOptions;
-  },
-  getRequestId: state => {
-    return state.userOptions.requestId;
-  },
-  getCategoryId: state => {
-    return state.userOptions.categoryId;
-  },
-  getInsuranceCompanyId: state => {
-    return state.userOptions.insuranceCompanyId;
-  },
-  getUsername: state => {
-    return state.userOptions.username;
+  getUserInfo: state => {
+    return state.userInfo;
   }
 };
 
 export const mutations = {
-  SET_USER_OPTIONS(state, payload) {
-    state.userOptions = payload;
+  SET_USER_INFO(state, payload) {
+    state.userInfo = payload;
   }
 };
 
