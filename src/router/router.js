@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../views/auth/Login";
-import Registration from "../views/auth/Registration";
+import Enrolment from "../views/auth/Enrolment";
 import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
@@ -16,27 +16,22 @@ const routes = [
     component: Dashboard
   },
   {
-    path: "/dashboard",
-    name: "dashboard",
-    component: Dashboard
-  },
-  {
     path: "/add-company",
-    name: "addCompany",
+    name: "add-company",
     component: AddCompany
   },
   {
     path: "/create-company",
-    name: "createCompany",
+    name: "create-company",
     component: CreateCompany
   },
   {
-    path: "/registration",
-    name: "registration",
-    component: Registration
+    path: "/enrolment",
+    name: "enrolment",
+    component: Enrolment
   },
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: Login
   }

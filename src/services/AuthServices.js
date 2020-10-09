@@ -2,27 +2,6 @@ import BaseService from "../services/BaseService";
 import AppUtils from "../utils/baseUtils/AppUtils";
 
 class AuthServices extends BaseService {
-  registrationInit(
-    payload,
-    successAction,
-    loaderType,
-    errorType,
-    showSuccessMessage,
-    successCondition,
-    getErrorMessage
-  ) {
-    return this.makePostRequest(
-      AppUtils.urls.auth.REGISTRATION_INIT,
-      payload,
-      successAction,
-      loaderType,
-      errorType,
-      showSuccessMessage,
-      successCondition,
-      getErrorMessage
-    );
-  }
-
   login(
     payload,
     successAction,
@@ -43,7 +22,8 @@ class AuthServices extends BaseService {
       getErrorMessage
     );
   }
-  registrationComplete(
+
+  enrollmentComplete(
     payload,
     successAction,
     loaderType,
@@ -53,7 +33,28 @@ class AuthServices extends BaseService {
     getErrorMessage
   ) {
     return this.makePostRequest(
-      AppUtils.urls.auth.REGISTRATION_COMPLETE,
+      AppUtils.urls.auth.ENROLLMENT_COMPLETE,
+      payload,
+      successAction,
+      loaderType,
+      errorType,
+      showSuccessMessage,
+      successCondition,
+      getErrorMessage
+    );
+  }
+
+  enrollmentInitiate(
+    payload,
+    successAction,
+    loaderType,
+    errorType,
+    showSuccessMessage,
+    successCondition,
+    getErrorMessage
+  ) {
+    return this.makePostRequest(
+      AppUtils.urls.auth.ENROLLMENT_INITIATE,
       payload,
       successAction,
       loaderType,

@@ -31,17 +31,17 @@
 </template>
 
 <script>
-import StoreUtils from "../../utils/baseUtils/StoreUtils";
+import StoreUtils from "../../../../utils/baseUtils/StoreUtils";
 
 export default {
-  name: "RegistrationComplete",
+  name: "EnrolmentComplete",
   data() {
     return {};
   },
   methods: {
     submit(data) {
       StoreUtils.commit("form/BUILD_FORM_BODY", data);
-      StoreUtils.dispatch("auth/registrationComplete");
+      StoreUtils.dispatch("auth/enrollmentComplete");
     }
   }
 };
