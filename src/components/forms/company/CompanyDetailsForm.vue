@@ -47,8 +47,7 @@ export default {
   methods: {
     submit(data) {
       StoreUtils.commit("form/BUILD_FORM_BODY", data);
-
-      StoreUtils.dispatch("company/toCompanyAddress");
+      StoreUtils.commit("form/INCREASE_FORM_STAGE_BY_ONE");
     }
   }
 };

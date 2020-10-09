@@ -29,7 +29,7 @@ export const actions = {
       StoreUtils.getters.form.GET_FORM_BODY
     );
     let payload = {
-      username: formBody.Username,
+      username: formBody.username,
       countryCode: "234",
       password: formBody.password
     };
@@ -46,7 +46,7 @@ export const actions = {
 
     authService.login(payload, successAction, LoaderUtils.types.BLOCKING);
   },
-  registrationInit() {
+  enrollmentInitiate() {
     let formBody = StoreUtils.rootGetters(
       StoreUtils.getters.form.GET_FORM_BODY
     );
@@ -71,13 +71,13 @@ export const actions = {
       StoreUtils.commit("form/BUILD_FORM_BODY", uniqueRefPayload);
     };
 
-    authService.registrationInit(
+    authService.enrollmentInitiate(
       payload,
       successAction,
       LoaderUtils.types.BLOCKING
     );
   },
-  registrationComplete() {
+  enrollmentComplete() {
     let formBody = StoreUtils.rootGetters(
       StoreUtils.getters.form.GET_FORM_BODY
     );
@@ -92,14 +92,10 @@ export const actions = {
       createAccount: "YES",
       source: "WEB"
     };
-    console.log("payload =>", payload);
-    let successAction = () => {
+    let successAction = responseData => {
       //save users info in the store
 
-     // StoreUtils.commit("user/SET_USER_INFO", responseData);
-     //  console.log(responseData)
-
-
+      StoreUtils.commit("user/SET_USER_INFO", responseData);
 
       //route the user to the dashboard
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
@@ -108,7 +104,7 @@ export const actions = {
       StoreUtils.dispatch("form/resetForm");
     };
 
-    authService.registrationComplete(
+    authService.enrollmentComplete(
       payload,
       successAction,
       LoaderUtils.types.BLOCKING

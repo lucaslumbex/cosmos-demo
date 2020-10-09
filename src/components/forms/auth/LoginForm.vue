@@ -2,12 +2,12 @@
   <div class="app-form">
     <FormulateForm @submit="submit">
       <FormulateInput
-        name="Username"
+        name="username"
         type="tel"
-        label="Username*"
+        label="Phone Number*"
         validation="required"
-        validation-name="phone number"
-        placeholder="Phone number/username"
+        validation-name="Phone Number"
+        placeholder="Phone Number"
       />
       <FormulateInput
         name="password"

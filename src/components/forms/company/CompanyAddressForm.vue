@@ -75,7 +75,7 @@ export default {
     submit(data) {
       StoreUtils.commit("form/BUILD_FORM_BODY", data);
 
-      StoreUtils.dispatch("company/setNewCompany");
+      StoreUtils.dispatch("company/createCompany");
     }
   }
 };
