@@ -9,7 +9,16 @@ class RouterUtils {
     },
     company: {
       CREATE_COMPANY: "create-company",
-      ADD_COMPANY: "add-company"
+      ADD_COMPANY: "add-company",
+      COMPANY_DETAILS: "company-details"
+    },
+    officer: {
+      ALL_OFFICERS: "all-officers",
+      OFFICER_MORE_INFO: "officer-more-info",
+      ADD_OFFICERS: "add-officers"
+    },
+    document: {
+      ALL_DOCUMENTS: "all-documents"
     },
     DASHBOARD: "dashboard"
   };

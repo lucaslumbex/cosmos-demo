@@ -222,4 +222,120 @@ p {
 .header img {
     height: 50px;
 }
+
+.app-header {display: flex;padding: 30px 20px 10px 20px;}
+.app-header .menu {width: 40px;}
+.app-header .back-button {}
+.app-header .back-button:hover{}
+.app-header .back-button svg{
+    fill: #de5f5f;
+    height: 18px;
+    width: auto;
+}
+.app-header .back-button:hover svg{
+    fill: #ca5152;
+}
+.app-header .nav {width: calc(100% - 40px);display: flex;justify-content: space-between;}
+.app-header .nav .info {}
+.app-header .nav .info .title {margin-bottom: 4px;margin-top: -5px;}
+.app-header .nav .info .sub {font-size: 12px;line-height: 16px;color: #757575;margin-bottom: 0;}
+.app-header .nav .info .sub .dropdown {margin-left: 10px;}
+.app-header .nav .info .sub .dropdown svg {fill: #616161;height: 8px;opacity: .7;}
+.app-header .nav .page-title {}
+.app-header .nav .action {
+}
+.app-header .nav .action a {
+}
+.app-header .nav .action a svg {height: 20px;fill: #de5f5f;}
 /*AppHeader END*/
+
+/*AppFooter*/
+.app-footer {
+}
+.app-footer p {
+}
+.app-footer p span {
+    color: #dd5f5f;
+}
+/*AppFooter END*/
+
+/*MobileSideMenu*/
+.mobile-side-menu {
+}
+.mobile-side-menu .backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.mobile-side-menu .menu-panel {
+    overflow-y: auto;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    padding: 0;
+    width: 290px;
+}
+/*MobileSideMenu END*/
+
+/*AppSidebar*/
+.app-sidebar {
+}
+.app-sidebar .top {padding: 50px 0 20px 0;border-bottom: 1px solid #FAE5E5;}
+.app-sidebar .logo {margin-bottom: 0;padding: 0 20px;}
+.app-sidebar .logo .pie {display: inline-block;}
+.app-sidebar .logo .pie img {
+    height: 28px;
+    margin-top: -7px;
+}
+.app-sidebar .logo .text {
+    color: #707070;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    display: inline-block;
+}
+.app-sidebar .info {
+}
+.app-sidebar .info .title {margin-top: 60px;margin-bottom: 0;padding: 0 20px;font-size: 14px;line-height: 18px;}
+.app-sidebar .info .sub {padding: 0 20px;font-size: 12px;line-height: 16px;margin-bottom: 0;color: #969696;}
+
+.app-sidebar .menu {padding: 10px 20px;}
+.app-sidebar .menu .nav {
+}
+.app-sidebar .menu .nav-item {
+}
+.app-sidebar .menu .nav-link {padding: 14px 0;color: #969696;}
+.app-sidebar .menu .nav-link:hover,
+.app-sidebar .menu .nav-link:focus {
+}
+.app-sidebar .menu .nav-link.active {color: #DD5F5F;}
+.app-sidebar .menu .nav-link svg {height: 20px;width: 20px;fill: #DD5F5F;margin-right: 5px;}
+.app-sidebar .menu .nav-link.active svg {}
+.app-sidebar .menu .nav-link:hover svg,
+.app-sidebar .menu .nav-link:focus svg {
+}
+
+.app-sidebar .action {
+}
+.app-sidebar .action .nav-link {
+}
+.app-sidebar .action .nav-link:hover,
+.app-sidebar .action .nav-link:focus {
+}
+.app-sidebar .action .nav-link svg {height: 20px;}
+/*AppSidebar END*/
+
+/*InfoTray*/
+.info-tray{
+    padding: 15px 4px;
+}
+/*InfoTray END*/

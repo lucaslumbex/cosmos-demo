@@ -7,11 +7,27 @@ const companyService = new CompanyService();
 
 export const namespaced = true;
 
-export const state = {};
+export const state = {
+  currentCompanyId: ""
+};
 
-export const getters = {};
+export const getters = {
+  getCurrentCompanyId: state => {
+    return state.currentCompanyId;
+  },
+  getCurrentCompany: state => {
+    return StoreUtils.rootGetters(
+      "user/getCompanyById",
+      state.currentCompanyId
+    );
+  }
+};
 
-export const mutations = {};
+export const mutations = {
+  SET_CURRENT_COMPANY_ID(state, payload) {
+    state.currentCompanyId = payload;
+  }
+};
 
 export const actions = {
   createCompany() {
@@ -31,8 +47,15 @@ export const actions = {
       orgEmail: formBody.orgEmail,
       orgWebsite: formBody.orgWebsite,
       orgUserID: StoreUtils.rootGetters(StoreUtils.getters.user.GET_USER_INFO)
-        .id
+        .id,
+      requestType: "company",
+      firstName: StoreUtils.rootGetters(StoreUtils.getters.user.GET_USER_INFO)
+        .firstName,
+      lastName: StoreUtils.rootGetters(StoreUtils.getters.user.GET_USER_INFO)
+        .lastName
     };
+
+    // console.log("payload =>", payload);
 
     //  route to create company
     let successAction = RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
