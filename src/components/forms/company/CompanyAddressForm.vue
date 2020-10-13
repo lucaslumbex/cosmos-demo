@@ -12,34 +12,35 @@
       />
       <FormulateInput
         name="orgCity"
-        type="select"
-        label="City* "
+        type="text"
+        label="City*"
         validation="required"
         validation-name="City "
         placeholder="Select your City..."
-        :options="{
-          Lekki: 'Lekki'
-        }"
       />
       <FormulateInput
         name="orgState"
-        type="text"
+        type="select"
         label="State*"
         validation="required"
         validation-name="State"
         placeholder="Enter Your State..."
+        :options="nigerianStatesOptions"
       />
       <FormulateInput
         name="orgCountry"
-        type="text"
+        type="select"
         label="Country*"
         validation="required"
         validation-name="Country "
         placeholder="Enter The Country..."
+        :options="{
+          nigeria: 'Nigeria'
+        }"
       />
       <FormulateInput
         name="orgPhone"
-        type="text"
+        type="tel"
         label="Phone Number*"
         validation="required"
         validation-name="Phone Number"
@@ -50,15 +51,14 @@
         type="email"
         label="Company Email*"
         validation="required"
-        validation-name="Email "
+        validation-name="Email"
         placeholder="Enter The Company Email..."
       />
       <FormulateInput
         name="orgWebsite"
         type="url"
-        label="Website*"
-        validation="required"
-        validation-name="Website "
+        label="Website"
+        validation-name="Website"
         placeholder="Enter The Website..."
       />
       <FormulateInput type="submit" label="CREATE COMPANY" />
@@ -68,9 +68,15 @@
 
 <script>
 import StoreUtils from "../../../utils/baseUtils/StoreUtils";
+import AppUtils from "../../../utils/baseUtils/AppUtils";
 
 export default {
   name: "CompanyAddressForm",
+  computed: {
+    nigerianStatesOptions() {
+      return AppUtils.allNigerianStatesOptions();
+    }
+  },
   methods: {
     submit(data) {
       StoreUtils.commit("form/BUILD_FORM_BODY", data);

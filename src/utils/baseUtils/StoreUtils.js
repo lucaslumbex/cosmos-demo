@@ -46,7 +46,7 @@ class StoreUtils {
       GET_CURRENT_TABLE_OBJECT: "form/getCurrentTableObject"
     },
     user: {
-      GET_USER_INFO: "userAccount/getUserInfo"
+      GET_USER_INFO: "user/getUserInfo"
     },
     company: {
       GET_USER_INFO: "company/getUserInfo"

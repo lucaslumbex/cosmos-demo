@@ -6,22 +6,11 @@ const authService = new AuthServices();
 
 export const namespaced = true;
 
-export const state = {
-  userInfo: {
-  }
-};
+export const state = {};
 
-export const getters = {
-  getUserInfo: state => {
-    return state.userInfo;
-  }
-};
+export const getters = {};
 
-export const mutations = {
-  SET_USER_INFO(state, payload) {
-    state.userInfo = payload;
-  }
-};
+export const mutations = {};
 
 export const actions = {
   login() {
@@ -34,11 +23,21 @@ export const actions = {
       password: formBody.password
     };
     let successAction = responseData => {
-      //save users info in the store
-      StoreUtils.commit("user/SET_USER_INFO", responseData);
-
       //reset the form
       StoreUtils.dispatch("form/resetForm");
+
+      //save users info in the store
+      StoreUtils.commit("user/SET_USER_INFO", responseData);
+      if (responseData.companies.data.length > 0) {
+        StoreUtils.commit(
+          "company/SET_CURRENT_COMPANY_ID",
+          responseData.companies.data[0].orgID
+        );
+        StoreUtils.commit(
+          "account/SET_CURRENT_ACCOUNT_ID",
+          responseData.companies.data[0].accounts[0].accID
+        );
+      }
 
       //route the user to the dashboard
       RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);

@@ -6,15 +6,18 @@ import * as loader from "./modules/baseModules/loader.js";
 import * as notification from "./modules/baseModules/notification.js";
 import * as table from "./modules/baseModules/table.js";
 import * as form from "./modules/baseModules/form.js";
+import * as sideMenu from "./modules/baseModules/sideMenu.js";
 import * as auth from "./modules/auth.js";
 import * as user from "./modules/user.js";
 
 import * as company from "./modules/company.js";
+import * as account from "./modules/account.js";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
+    account,
     company,
     user,
     auth,
@@ -22,7 +25,8 @@ export default new Vuex.Store({
     loader,
     notification,
     table,
-    form
+    form,
+    sideMenu
   },
   state: {},
   mutations: {},

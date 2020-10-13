@@ -4,9 +4,9 @@ import { format } from "date-fns";
 
 class S3FileUpload {
   static params = {
-    ALBUM_BUCKET_NAME: "rubies-insurance-image-uploads",
+    ALBUM_BUCKET_NAME: "mobile-rubies-business-file-uploads",
     ALBUM_BUCKET_LINK:
-      "https://rubies-insurance-image-uploads.s3-us-west-2.amazonaws.com/",
+      "https://mobile-rubies-business-file-uploads.s3-us-west-2.amazonaws.com/",
     BUCKET_REGION: "us-east-1",
     // IDENTITY_POOL_ID: "us-west-2:99181780-425e-420e-8c91-fb60637c655e",
     IDENTITY_POOL_ID: "us-west-2:169e15d7-e800-4cd9-a1c4-57f3bfaa6609",

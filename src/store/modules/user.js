@@ -103,14 +103,10 @@ export const getters = {
   },
   getIfUserHasCreatedCompany: state => {
     return state.userInfo.companies.data.length !== 0;
+  },
+  getCompanyById: state => id => {
+    return state.userInfo.companies.data.find(company => company.orgID === id);
   }
-  // getIfAccountOfficerHasUploadedDocuments: state = accountId = companyId =>{
-  //   if(state.userInfo.companies.data){
-  //     return true;
-  //   }else {
-  //     return false;
-  //   }
-  // }
 };
 
 export const mutations = {
