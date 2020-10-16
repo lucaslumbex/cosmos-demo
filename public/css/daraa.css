@@ -137,3 +137,17 @@
     font-size: 12px;
     margin-top: -5%;
 }
+
+.details-body{
+    padding: 2% 0 0 0;
+}
+.details{
+    border-bottom: 1px solid #c7c6c6;
+    padding: 1% 0 2% 4%;
+    color: #7d7979;
+}
+.details-left{}
+.details-right{
+    float: right;
+    padding: 0 4% 0 0;
+}

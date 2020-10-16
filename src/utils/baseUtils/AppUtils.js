@@ -9,7 +9,8 @@ class AppUtils {
       ENROLLMENT_COMPLETE: "enrollmentComplete"
     },
     company: {
-      CREATE_COMPANY: "/createcompany"
+      CREATE_COMPANY: "/createcompany",
+      FETCH_COMPANY_DETAILS: "/readSingleCompany"
     }
   };
 

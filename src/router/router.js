@@ -6,10 +6,16 @@ import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
+import ViewCompanyDetails from "../components/tables/company/ViewCompanyDetailsTable";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/company-details",
+    name: "company-details",
+    component: ViewCompanyDetails
+  },
   {
     path: "/dashboard",
     name: "dashboard",
