@@ -6,10 +6,22 @@ import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
+import AllAccountOfficers from "../views/account officer/AllAccountOfficers";
+import OfficerMoreInfo from "../views/account officer/OfficerMoreInfo";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/all-officers",
+    name: "all-officers",
+    component: AllAccountOfficers
+  },
+  {
+    path: "/officer-more-info",
+    name: "officer-more-info",
+    component: OfficerMoreInfo
+  },
   {
     path: "/dashboard",
     name: "dashboard",

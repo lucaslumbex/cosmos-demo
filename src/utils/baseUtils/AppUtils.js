@@ -10,6 +10,10 @@ class AppUtils {
     },
     company: {
       CREATE_COMPANY: "/createcompany"
+    },
+    officer: {
+      FETCH_ALL_OFFICERS: "/readOfficers",
+      READ_SINGLE_OFFICER: "/readSingleOfficer"
     }
   };
 

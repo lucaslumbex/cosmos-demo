@@ -4,12 +4,16 @@ export const namespaced = true;
 
 export const state = {
   stage: 0,
-  formBody: {}
+  formBody: {},
+
 };
 
 export const getters = {
   getFormStage: state => {
     return state.stage;
+  },
+  getTableData: state => {
+    return state.tableData;
   },
   getFormBody: state => {
     return state.formBody;

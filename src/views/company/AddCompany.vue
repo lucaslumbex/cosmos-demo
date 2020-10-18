@@ -1,8 +1,9 @@
 <template>
   <div>
     <CompanyDetailsForm v-if="formStage === 0" />
-    <CompanyAddressForm v-if="formStage === 1" /></div
-></template>
+    <CompanyAddressForm v-if="formStage === 1" />
+  </div>
+</template>
 
 <script>
 import CompanyDetailsForm from "../../components/forms/company/CompanyDetailsForm";

@@ -8,7 +8,7 @@ const companyService = new CompanyService();
 export const namespaced = true;
 
 export const state = {
-  currentCompanyId: ""
+  currentCompanyId: "1420"
 };
 
 export const getters = {

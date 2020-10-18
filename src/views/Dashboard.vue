@@ -39,6 +39,7 @@ import AppLayout from "../components/layout/AppLayout";
 import DashboardCard from "../components/cards/DashboardCard";
 import OfficerDocumentUploadInfoTray from "../components/infoTrays/officer/OfficerDocumentUploadInfoTray";
 import StoreUtils from "../utils/baseUtils/StoreUtils";
+
 export default {
   name: "Dashboard",
   components: { OfficerDocumentUploadInfoTray, DashboardCard, AppLayout },
@@ -52,6 +53,7 @@ export default {
       );
     }
   }
+
 };
 </script>
 

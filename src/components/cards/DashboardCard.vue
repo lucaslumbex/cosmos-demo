@@ -16,7 +16,7 @@
         Acct. Details
       </p>
     </div>
-    <div class="services alt">
+    <div @click="goToAllOfficers" class="services alt">
       <p class="coloured-text2">
         <span>
           0
@@ -76,6 +76,11 @@ export default {
   created() {
     if (StoreUtils.rootGetters("user/getIfUserHasCreatedCompany") === false) {
       RouterUtils.changeRouteTo(RouterUtils.routes.company.CREATE_COMPANY);
+    }
+  },
+  methods: {
+    goToAllOfficers(){
+      RouterUtils.changeRouteTo(RouterUtils.routes.officer.ALL_OFFICERS)
     }
   }
 };
