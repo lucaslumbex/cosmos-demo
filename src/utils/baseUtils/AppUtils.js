@@ -10,6 +10,9 @@ class AppUtils {
     },
     company: {
       CREATE_COMPANY: "/createcompany"
+    },
+    officer: {
+      ADD_OFFICER: "/createOfficer"
     }
   };
 
@@ -55,20 +58,20 @@ class AppUtils {
       ],
       init: function() {
         let agent = this.header.join(" "),
-          os = this.matchItem(agent, this.dataos),
-          browser = this.matchItem(agent, this.databrowser);
+            os = this.matchItem(agent, this.dataos),
+            browser = this.matchItem(agent, this.databrowser);
 
         return { os: os, browser: browser };
       },
       matchItem: (string, data) => {
         // let i = 0,
         let j = 0,
-          i,
-          regex,
-          regexv,
-          match,
-          matches,
-          version;
+            i,
+            regex,
+            regexv,
+            match,
+            matches,
+            version;
 
         for (i = 0; i < data.length; i += 1) {
           regex = new RegExp(data[i].value, "i");
@@ -132,8 +135,8 @@ class AppUtils {
       message: `Copied!`
     };
     StoreUtils.dispatch(
-      StoreUtils.actions.notification.addNotificationSlide,
-      notification
+        StoreUtils.actions.notification.addNotificationSlide,
+        notification
     );
   }
 

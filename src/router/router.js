@@ -6,10 +6,16 @@ import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
+import AccountOfficerDetails from "../views/officer/AddAccountOfficerDetails";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/add-officer",
+    name: "add-officer",
+    component: AccountOfficerDetails
+  },
   {
     path: "/dashboard",
     name: "dashboard",
