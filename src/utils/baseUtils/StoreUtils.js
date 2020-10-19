@@ -29,7 +29,8 @@ class StoreUtils {
     },
     company: {
       COMPANY_ADDRESS: "company/toCompanyAddress",
-      SET_NEW_COMPANY: "company/setNewCompany"
+      SET_NEW_COMPANY: "company/setNewCompany",
+      VIEW_COMPANY_DETAILS: "company/currentCompanyDetails"
     }
   };
 
@@ -49,7 +50,8 @@ class StoreUtils {
       GET_USER_INFO: "user/getUserInfo"
     },
     company: {
-      GET_USER_INFO: "company/getUserInfo"
+      GET_USER_INFO: "company/getUserInfo",
+      GET_COMPANY_DETAILS: "company/getCurrentCompanyDetails"
     }
   };
 
