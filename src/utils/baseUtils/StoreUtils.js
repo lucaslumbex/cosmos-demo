@@ -43,8 +43,8 @@ class StoreUtils {
       GET_FORM_BODY: "form/getFormBody"
     },
     table: {
-      GET_TABLE_DATA: "form/getTableData",
-      GET_CURRENT_TABLE_OBJECT: "form/getCurrentTableObject"
+      GET_TABLE_DATA: "table/getTableData",
+      GET_CURRENT_TABLE_OBJECT: "table/getCurrentTableObject"
     },
     user: {
       GET_USER_INFO: "user/getUserInfo"

@@ -9,8 +9,10 @@ class AppUtils {
       ENROLLMENT_COMPLETE: "enrollmentComplete"
     },
     company: {
-      CREATE_COMPANY: "/createcompany",
-      FETCH_COMPANY_DETAILS: "/readSingleCompany"
+      CREATE_COMPANY: "/createcompany"
+    },
+    officer: {
+      ADD_OFFICER: "/createOfficer"
     }
   };
 
