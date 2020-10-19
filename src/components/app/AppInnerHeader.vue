@@ -10,7 +10,7 @@
       </a>
     </div>
     <div class="nav">
-      <div class="page-title">{{ pageTitle }}</div>
+      <div class="page-title text-center">{{ pageTitle }}</div>
     </div>
   </div>
 </template>

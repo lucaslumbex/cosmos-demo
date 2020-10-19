@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="services" @click="submit">
+    <div class="services" @click="goToCustomerDetails">
       <p class="coloured-text">
         <span>
           100%
@@ -16,7 +16,7 @@
         Acct. Details
       </p>
     </div>
-    <div class="services alt">
+    <div @click="goToAllOfficers" class="services alt">
       <p class="coloured-text2">
         <span>
           0
@@ -79,8 +79,11 @@ export default {
     }
   },
   methods: {
-    submit() {
+    goToCustomerDetails() {
       RouterUtils.changeRouteTo(RouterUtils.routes.company.COMPANY_DETAILS);
+    },
+    goToAllOfficers() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.officer.ALL_OFFICERS);
     }
   }
 };

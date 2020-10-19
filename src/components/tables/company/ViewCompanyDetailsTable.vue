@@ -5,7 +5,7 @@
         Company Name
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgName}}
+        {{ currentCompanyDetails.orgName }}
       </span>
     </p>
     <p class="details">
@@ -13,7 +13,7 @@
         Company Country
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgCountry}}
+        {{ currentCompanyDetails.orgCountry }}
       </span>
     </p>
     <p class="details">
@@ -21,7 +21,7 @@
         Company City
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgCity}}
+        {{ currentCompanyDetails.orgCity }}
       </span>
     </p>
     <p class="details">
@@ -29,7 +29,7 @@
         Company Street
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgStreet}}
+        {{ currentCompanyDetails.orgStreet }}
       </span>
     </p>
     <p class="details">
@@ -37,7 +37,7 @@
         Company Website
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgWebsite}}
+        {{ currentCompanyDetails.orgWebsite }}
       </span>
     </p>
     <p class="details">
@@ -45,7 +45,7 @@
         Company ID
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgID}}
+        {{ currentCompanyDetails.orgID }}
       </span>
     </p>
     <p class="details">
@@ -53,7 +53,7 @@
         Company User ID
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgUserID}}
+        {{ currentCompanyDetails.orgUserID }}
       </span>
     </p>
     <p class="details">
@@ -61,7 +61,7 @@
         Company Phone
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgPhone}}
+        {{ currentCompanyDetails.orgPhone }}
       </span>
     </p>
     <p class="details">
@@ -69,7 +69,7 @@
         Company Incorporation Date
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgIncDate}}
+        {{ currentCompanyDetails.orgIncDate }}
       </span>
     </p>
     <p class="details">
@@ -77,7 +77,7 @@
         Company Type
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgType}}
+        {{ currentCompanyDetails.orgType }}
       </span>
     </p>
     <p class="details">
@@ -85,7 +85,7 @@
         Company Email
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgEmail}}
+        {{ currentCompanyDetails.orgEmail }}
       </span>
     </p>
     <p class="details">
@@ -93,7 +93,7 @@
         Company Incorporation Number
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgIncNumber}}
+        {{ currentCompanyDetails.orgIncNumber }}
       </span>
     </p>
     <p class="details">
@@ -101,7 +101,7 @@
         Company Date
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgDate}}
+        {{ currentCompanyDetails.orgDate }}
       </span>
     </p>
     <p class="details">
@@ -109,7 +109,7 @@
         Company Custom ID
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgCustID}}
+        {{ currentCompanyDetails.orgCustID }}
       </span>
     </p>
     <p class="details">
@@ -117,7 +117,7 @@
         Company State
       </span>
       <span class="details-right">
-        {{currentCompanyDetails.orgState}}
+        {{ currentCompanyDetails.orgState }}
       </span>
     </p>
   </div>
@@ -128,12 +128,9 @@ import StoreUtils from "../../../utils/baseUtils/StoreUtils";
 
 export default {
   name: "ViewCompanyDetailsTable",
-  created() {
-    StoreUtils.dispatch("company/fetchCompanyDetails");
-  },
   computed: {
     currentCompanyDetails() {
-      return StoreUtils.rootGetters("company/getCurrentCompanyDetails");
+      return StoreUtils.rootGetters("company/getCurrentCompany");
     }
   }
 };

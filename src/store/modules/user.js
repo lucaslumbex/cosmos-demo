@@ -1,3 +1,9 @@
+import StoreUtils from "../../utils/baseUtils/StoreUtils";
+import LoaderUtils from "../../utils/baseUtils/LoaderUtils";
+import CompanyService from "../../services/CompanyService";
+import RouterUtils from "../../utils/baseUtils/RouterUtils";
+const companyService = new CompanyService();
+
 export const namespaced = true;
 
 export const state = {
@@ -101,6 +107,9 @@ export const getters = {
   getUserEmail: state => {
     return state.userInfo.email;
   },
+  getUserId: state => {
+    return state.userInfo.id;
+  },
   getIfUserHasCreatedCompany: state => {
     return state.userInfo.companies.data.length !== 0;
   },
@@ -112,7 +121,27 @@ export const getters = {
 export const mutations = {
   SET_USER_INFO(state, payload) {
     state.userInfo = payload;
+  },
+  SET_USER_COMPANIES(state, payload) {
+    state.userInfo.companies.data = payload;
   }
 };
 
-export const actions = {};
+export const actions = {
+  fetchUserCompanies() {
+    let payload = {
+      userID: StoreUtils.rootGetters("user/getUserId"),
+      requestType: "company"
+    };
+
+    let successAction = responseData => {
+      StoreUtils.commit("user/SET_USER_COMPANIES", responseData.data);
+      RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
+    };
+    companyService.fetchCompanies(
+      payload,
+      successAction,
+      LoaderUtils.types.BLOCKING
+    );
+  }
+};

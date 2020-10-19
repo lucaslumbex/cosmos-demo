@@ -3,7 +3,7 @@ import StoreUtils from "../../utils/baseUtils/StoreUtils";
 export const namespaced = true;
 
 export const state = {
-  currentAccountId: ""
+  currentAccountId: "1515"
 };
 
 export const getters = {

@@ -31,6 +31,9 @@ class StoreUtils {
       COMPANY_ADDRESS: "company/toCompanyAddress",
       SET_NEW_COMPANY: "company/setNewCompany",
       VIEW_COMPANY_DETAILS: "company/currentCompanyDetails"
+    },
+    officer: {
+      SET_OFFICER_INFO: "officer/setOfficerInfo"
     }
   };
 
@@ -43,15 +46,14 @@ class StoreUtils {
       GET_FORM_BODY: "form/getFormBody"
     },
     table: {
-      GET_TABLE_DATA: "table/getTableData",
-      GET_CURRENT_TABLE_OBJECT: "table/getCurrentTableObject"
+      GET_TABLE_DATA: "form/getTableData",
+      GET_CURRENT_TABLE_OBJECT: "form/getCurrentTableObject"
     },
     user: {
       GET_USER_INFO: "user/getUserInfo"
     },
     company: {
-      GET_USER_INFO: "company/getUserInfo",
-      GET_COMPANY_DETAILS: "company/getCurrentCompanyDetails"
+      GET_USER_INFO: "company/getUserInfo"
     }
   };
 

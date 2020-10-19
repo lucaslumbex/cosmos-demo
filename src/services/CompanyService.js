@@ -2,7 +2,7 @@ import BaseService from "./BaseService";
 import AppUtils from "../utils/baseUtils/AppUtils";
 
 class CompanyService extends BaseService {
-  fetchCompanyDetails(
+  fetchCompanies(
     payload,
     successAction,
     loaderType,
@@ -12,7 +12,7 @@ class CompanyService extends BaseService {
     getErrorMessage
   ) {
     return this.makePostRequest(
-      AppUtils.urls.company.FETCH_COMPANY_DETAILS,
+      AppUtils.urls.company.FETCH_COMPANIES,
       payload,
       successAction,
       loaderType,

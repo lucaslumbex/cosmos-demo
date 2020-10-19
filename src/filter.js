@@ -10,6 +10,7 @@ Vue.filter("formatDateForTable", value => {
 });
 
 Vue.filter("getInitials", value => {
+  console.log("val =>",value)
   let parts = value.split(" ");
   let initials = "";
   for (let i = 0; i < parts.length; i++) {

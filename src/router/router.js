@@ -6,9 +6,10 @@ import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
+import AllAccountOfficers from "../views/officer/AllAccountOfficers";
+import OfficerMoreInfo from "../views/officer/OfficerMoreInfo";
 import AccountOfficerDetails from "../views/officer/AddAccountOfficerDetails";
-import ViewCompanyDetails from "../components/tables/company/ViewCompanyDetailsTable";
-
+import CompanyDetails from "../views/company/CompanyDetails";
 
 Vue.use(VueRouter);
 
@@ -16,12 +17,22 @@ const routes = [
   {
     path: "/company-details",
     name: "company-details",
-    component: ViewCompanyDetails
+    component: CompanyDetails
   },
   {
     path: "/add-officer",
     name: "add-officer",
     component: AccountOfficerDetails
+  },
+  {
+    path: "/all-officers",
+    name: "all-officers",
+    component: AllAccountOfficers
+  },
+  {
+    path: "/officer-more-info",
+    name: "officer-more-info",
+    component: OfficerMoreInfo
   },
   {
     path: "/dashboard",
