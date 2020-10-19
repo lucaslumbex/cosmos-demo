@@ -1,13 +1,32 @@
 <template>
   <div class="app-table">
-    <div class="top"></div>
-    <div class="records">
-      <p>=> {{tableData}}</p>
-      <div class="account-record alt">
-        <div class="avatar">LL</div>
+    <div class="top">
+      <div class="top-txt">
+        <p class="txt-1">Account Officer</p>
+        <p class="txt-2">Add Officer</p>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Type to Search" class="search-txt" />
+        <button class="search-btn">
+          <img src="../../../assets/search.png" class="search-img" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="records" v-if="tableData.length > 0">
+      <div
+        @click="viewOfficerMoreInfo(officer)"
+        class="account-record alt"
+        v-for="officer in tableData"
+        :key="officer.officerID"
+      >
+        <div class="avatar">
+          {{`${officer.officerFirstName} ${officer.officerLastName}`| getInitials }}
+        </div>
         <div class="info">
-          <p class="title text-ellipse">Lucas Lumbex</p>
-          <p class="sub">manager</p>
+          <p class="title text-ellipse">
+            {{ `${officer.officerFirstName} ${officer.officerLastName}` }}
+          </p>
+          <p class="sub">{{ officer.officerDesignation }}</p>
 
           <span class="ico">
             <svg
@@ -23,11 +42,18 @@
         </div>
       </div>
     </div>
+    <div v-else>
+      <div class="empty-info">
+        <img src="../../../assets/empty.png" class="empty-img" alt="" />
+        <span class="empty-txt">There are no records to show</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import StoreUtils from "../../../utils/baseUtils/StoreUtils";
+import RouterUtils from "@/utils/baseUtils/RouterUtils";
 
 export default {
   name: "AllAccountOfficersTable",
@@ -42,6 +68,10 @@ export default {
   methods: {
     fetchTableData() {
       StoreUtils.dispatch("officer/fetchAllOfficers");
+    },
+    viewOfficerMoreInfo(officer) {
+      StoreUtils.commit("table/SET_CURRENT_TABLE_OBJECT", officer);
+      RouterUtils.changeRouteTo(RouterUtils.routes.officer.OFFICER_MORE_INFO);
     }
   }
 };
