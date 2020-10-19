@@ -64,7 +64,7 @@
     border: 1px solid #DD5F5F;
     background-color: #ffffff;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 5%;
 }
 .services{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -136,4 +136,18 @@
 .set-up-sub{
     font-size: 12px;
     margin-top: -5%;
+}
+
+.details-body{
+    padding: 2% 0 0 0;
+}
+.details{
+    border-bottom: 1px solid #c7c6c6;
+    padding: 1% 0 2% 4%;
+    color: #7d7979;
+}
+.details-left{}
+.details-right{
+    float: right;
+    padding: 0 4% 0 0;
 }

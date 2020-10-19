@@ -1,7 +1,7 @@
 import CompanyService from "../../services/CompanyService";
 import LoaderUtils from "../../utils/baseUtils/LoaderUtils";
 import StoreUtils from "../../utils/baseUtils/StoreUtils";
-import RouterUtils from "../../utils/baseUtils/RouterUtils";
+// import RouterUtils from "../../utils/baseUtils/RouterUtils";
 
 const companyService = new CompanyService();
 
@@ -58,7 +58,14 @@ export const actions = {
     // console.log("payload =>", payload);
 
     //  route to create company
-    let successAction = RouterUtils.changeRouteTo(RouterUtils.routes.DASHBOARD);
+    let successAction = responseData => {
+      StoreUtils.commit(
+        "company/SET_CURRENT_COMPANY_ID",
+        responseData.companyId
+      );
+      // StoreUtils.commit("account/", responseData.accountNumber)
+      StoreUtils.dispatch("user/fetchUserCompanies");
+    };
 
     companyService.createCompany(
       payload,

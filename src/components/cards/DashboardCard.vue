@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="services">
+    <div class="services" @click="goToCustomerDetails">
       <p class="coloured-text">
         <span>
           100%
         </span>
         <span>
-          <img src="../../assets/to-do-list.png" class="to-do-list"  alt=""/>
+          <img src="../../assets/to-do-list.png" class="to-do-list" alt="" />
         </span>
       </p>
       <p class="normal-text">
@@ -79,8 +79,11 @@ export default {
     }
   },
   methods: {
-    goToAllOfficers(){
-      RouterUtils.changeRouteTo(RouterUtils.routes.officer.ALL_OFFICERS)
+    goToCustomerDetails() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.company.COMPANY_DETAILS);
+    },
+    goToAllOfficers() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.officer.ALL_OFFICERS);
     }
   }
 };

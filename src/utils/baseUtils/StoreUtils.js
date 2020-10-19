@@ -29,7 +29,8 @@ class StoreUtils {
     },
     company: {
       COMPANY_ADDRESS: "company/toCompanyAddress",
-      SET_NEW_COMPANY: "company/setNewCompany"
+      SET_NEW_COMPANY: "company/setNewCompany",
+      VIEW_COMPANY_DETAILS: "company/currentCompanyDetails"
     },
     officer: {
       SET_OFFICER_INFO: "officer/setOfficerInfo"
@@ -53,9 +54,6 @@ class StoreUtils {
     },
     company: {
       GET_USER_INFO: "company/getUserInfo"
-    },
-    officer: {
-      GET_OFFICER_INFO: "officer/getOfficerInfo"
     }
   };
 

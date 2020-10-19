@@ -15,7 +15,7 @@ class RouterUtils {
     officer: {
       ALL_OFFICERS: "all-officers",
       OFFICER_MORE_INFO: "officer-more-info",
-      ADD_OFFICERS: "add-officers"
+      ADD_OFFICER: "add-officer"
     },
     document: {
       ALL_DOCUMENTS: "all-documents"

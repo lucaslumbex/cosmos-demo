@@ -6,7 +6,7 @@
           Welcome,
         </span>
         <span class="welcome-text alt">
-          {{userLastName}}
+          {{ userLastName }}
         </span>
         <span>
           <button class="welcome-btn">Add account</button>
@@ -26,6 +26,9 @@
           Transactions, balances and more
         </p>
         <button class="docs-btn">Setup Now</button>
+        <button class="docs-btn" @click="goToAddOfficer">
+          Add Account Officer
+        </button>
 
         <br />
         <br />
@@ -39,13 +42,13 @@ import AppLayout from "../components/layout/AppLayout";
 import DashboardCard from "../components/cards/DashboardCard";
 import OfficerDocumentUploadInfoTray from "../components/infoTrays/officer/OfficerDocumentUploadInfoTray";
 import StoreUtils from "../utils/baseUtils/StoreUtils";
-
+import RouterUtils from "../utils/baseUtils/RouterUtils";
 export default {
   name: "Dashboard",
   components: { OfficerDocumentUploadInfoTray, DashboardCard, AppLayout },
   computed: {
     userLastName() {
-      return StoreUtils.rootGetters("user/getUserInfo").lastName
+      return StoreUtils.rootGetters("user/getUserInfo").lastName;
     },
     accountOfficerHasNotUploadedDocuments() {
       let currentAccount = StoreUtils.rootGetters("account/getCurrentAccount");
@@ -55,8 +58,12 @@ export default {
         currentAccount.hasOfficerUploaded === "NO"
       );
     }
+  },
+  methods: {
+    goToAddOfficer() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.officer.ADD_OFFICER);
+    }
   }
-
 };
 </script>
 

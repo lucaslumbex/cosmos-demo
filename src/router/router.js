@@ -8,10 +8,22 @@ import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
 import AllAccountOfficers from "../views/officer/AllAccountOfficers";
 import OfficerMoreInfo from "../views/officer/OfficerMoreInfo";
+import AccountOfficerDetails from "../views/officer/AddAccountOfficerDetails";
+import CompanyDetails from "../views/company/CompanyDetails";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/company-details",
+    name: "company-details",
+    component: CompanyDetails
+  },
+  {
+    path: "/add-officer",
+    name: "add-officer",
+    component: AccountOfficerDetails
+  },
   {
     path: "/all-officers",
     name: "all-officers",

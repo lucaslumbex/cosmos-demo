@@ -22,7 +22,8 @@ class OfficerService extends BaseService {
       getErrorMessage
     );
   }
-  singleOfficer(
+
+  addAccountOfficer(
     payload,
     successAction,
     loaderType,
@@ -32,7 +33,7 @@ class OfficerService extends BaseService {
     getErrorMessage
   ) {
     return this.makePostRequest(
-      AppUtils.urls.officer.READ_SINGLE_OFFICER,
+      AppUtils.urls.officer.ADD_OFFICER,
       payload,
       successAction,
       loaderType,

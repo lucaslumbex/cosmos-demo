@@ -2,6 +2,26 @@ import BaseService from "./BaseService";
 import AppUtils from "../utils/baseUtils/AppUtils";
 
 class CompanyService extends BaseService {
+  fetchCompanies(
+    payload,
+    successAction,
+    loaderType,
+    errorType,
+    showSuccessMessage,
+    successCondition,
+    getErrorMessage
+  ) {
+    return this.makePostRequest(
+      AppUtils.urls.company.FETCH_COMPANIES,
+      payload,
+      successAction,
+      loaderType,
+      errorType,
+      showSuccessMessage,
+      successCondition,
+      getErrorMessage
+    );
+  }
   createCompany(
     payload,
     successAction,
