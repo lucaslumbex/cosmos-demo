@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="services">
+    <div class="services" @click="submit">
       <p class="coloured-text">
         <span>
           100%
         </span>
         <span>
-          <img src="../../assets/to-do-list.png" class="to-do-list"  alt=""/>
+          <img src="../../assets/to-do-list.png" class="to-do-list" alt="" />
         </span>
       </p>
       <p class="normal-text">
@@ -76,6 +76,11 @@ export default {
   created() {
     if (StoreUtils.rootGetters("user/getIfUserHasCreatedCompany") === false) {
       RouterUtils.changeRouteTo(RouterUtils.routes.company.CREATE_COMPANY);
+    }
+  },
+  methods: {
+    submit() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.company.COMPANY_DETAILS);
     }
   }
 };
