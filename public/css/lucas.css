@@ -339,3 +339,26 @@ p {
     padding: 15px 4px;
 }
 /*InfoTray END*/
+
+/*AccountRecord*/
+.account-record {display: flex;position: relative;padding: 20px 20px;}
+.account-record.alt{
+    border: 1px solid rgba(221, 95, 95, .2);
+    padding: 10px 10px;
+}
+.account-record .avatar {width: 60px;height: 60px;border-radius: 50%;background-color: white;border: 1px solid #DD5F5F;color: #DD5F5F;font-size: 24px;line-height: 24px;padding: 15px 0;text-align: center;}
+.account-record .info {padding: 10px;width: calc(100% - 60px);position: relative;}
+.account-record .title {
+    font-size: 16px;line-height: 20px;margin-bottom: 2px;}
+.account-record .sub {margin-bottom: 0;font-size: 12px;line-height: 15px;}
+.account-record .ico {
+    position: absolute;
+    display: block;
+    right: 15px;
+    top: 15px;
+}
+.account-record .ico svg {
+    height: 16px;
+    fill: #dd5f5f;
+}
+/*AccountRecord END*/

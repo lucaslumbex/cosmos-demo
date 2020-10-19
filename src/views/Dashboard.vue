@@ -6,7 +6,7 @@
           Welcome,
         </span>
         <span class="welcome-text alt">
-          Adellet
+          {{userLastName}}
         </span>
         <span>
           <button class="welcome-btn">Add account</button>
@@ -44,6 +44,9 @@ export default {
   name: "Dashboard",
   components: { OfficerDocumentUploadInfoTray, DashboardCard, AppLayout },
   computed: {
+    userLastName() {
+      return StoreUtils.rootGetters("user/getUserInfo").lastName
+    },
     accountOfficerHasNotUploadedDocuments() {
       let currentAccount = StoreUtils.rootGetters("account/getCurrentAccount");
 

@@ -6,8 +6,8 @@ import Dashboard from "../views/Dashboard";
 
 import CreateCompany from "../views/company/CreateCompany";
 import AddCompany from "../views/company/AddCompany";
-import AllAccountOfficers from "../views/account officer/AllAccountOfficers";
-import OfficerMoreInfo from "../views/account officer/OfficerMoreInfo";
+import AllAccountOfficers from "../views/officer/AllAccountOfficers";
+import OfficerMoreInfo from "../views/officer/OfficerMoreInfo";
 
 Vue.use(VueRouter);
 
