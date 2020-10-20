@@ -65,5 +65,35 @@
     height: 56.5px;
     margin-bottom: 15px
 }
+.more-info-record{
+    margin: 10px 10px;
+}
+.more-info-record-next{
+}
+.more-info-record-details{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(221, 95, 95, .2);
+}
+.more-info-record-text{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.more-info-record-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid rgba(221, 95, 95, .2);
+}
+.more-info-record-details-last{
+    display: flex;
+    flex-direction: column;
+}
+.more-info-record-img{
+    width: 20px;
+    height: 20px;
+}
 
 
