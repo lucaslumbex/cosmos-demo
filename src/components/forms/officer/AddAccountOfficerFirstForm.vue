@@ -55,11 +55,15 @@
       />
       <FormulateInput
         name="officerNationality"
-        type="text"
+        type="select"
         label="Nationality*"
         validation="required"
         validation-name="Officer Nationality"
         placeholder="Enter Your Nationality"
+        :options="{
+          nigerian: 'Nigerian',
+          ghanaian: 'Ghanaian'
+        }"
       />
       <FormulateInput type="submit" label="Next" />
     </FormulateForm>
