@@ -61,7 +61,7 @@
         validation-name="Website"
         placeholder="Enter The Website..."
       />
-      <FormulateInput type="submit" label="CREATE COMPANY" />
+      <FormulateInput type="submit" label="Create Company" />
     </FormulateForm>
   </div>
 </template>

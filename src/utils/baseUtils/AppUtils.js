@@ -5,8 +5,8 @@ class AppUtils {
   static urls = {
     auth: {
       LOGIN: "login",
-      ENROLLMENT_INITIATE: "enrollmentInitiate",
-      ENROLLMENT_COMPLETE: "enrollmentComplete"
+      ENROLLMENT_INITIATE: "/enrollmentInitiate",
+      ENROLLMENT_COMPLETE: "/enrollmentComplete"
     },
     company: {
       CREATE_COMPANY: "/createcompany",

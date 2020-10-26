@@ -1,5 +1,5 @@
 <template>
-  <AppLayout>
+  <AppLayout v-if="ifUserHasCreatedCompany">
     <div class="dashboard">
       <p class="welcome-text">
         <span>
@@ -50,6 +50,9 @@ export default {
     userLastName() {
       return StoreUtils.rootGetters("user/getUserInfo").lastName;
     },
+    ifUserHasCreatedCompany() {
+      return StoreUtils.rootGetters("user/getIfUserHasCreatedCompany")
+    },
     accountOfficerHasNotUploadedDocuments() {
       let currentAccount = StoreUtils.rootGetters("account/getCurrentAccount");
 
@@ -59,9 +62,18 @@ export default {
       );
     }
   },
+  created() {
+    if (!this.ifUserHasCreatedCompany) {
+      console.log("gbese!!!");
+      this.goToCreateCompany();
+    }
+  },
   methods: {
     goToAddOfficer() {
       RouterUtils.changeRouteTo(RouterUtils.routes.officer.ADD_OFFICER);
+    },
+    goToCreateCompany() {
+      RouterUtils.changeRouteTo(RouterUtils.routes.company.CREATE_COMPANY);
     }
   }
 };
