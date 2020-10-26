@@ -4,11 +4,17 @@
     <FormulateForm @submit="submit">
       <FormulateInput
         name="officerIDType"
-        type="text"
+        type="select"
         label="ID Type*"
         validation="required"
         validation-name="Officer ID Type"
         placeholder="Enter Your ID Type"
+        :options="{
+          votersCard: 'Voters card',
+          nationality: 'National ID',
+          internationalPassport: 'International Passport',
+          driversLicense: 'Drivers License'
+        }"
       />
       <FormulateInput
         name="officerIDNumber"
@@ -42,11 +48,16 @@
       />
       <FormulateInput
         name="officerDesignation"
-        type="text"
+        type="select"
         label="Designation*"
         validation="required"
         validation-name="Officer Designation"
         placeholder="Enter Your Designation"
+        :options="{
+          director: 'Director',
+          signatory: 'Signatory',
+          both: 'Director & Signatory'
+        }"
       />
       <FormulateInput
         name="officerIndustry"
