@@ -69,15 +69,9 @@
 
 <script>
 import RouterUtils from "../../utils/baseUtils/RouterUtils";
-import StoreUtils from "../../utils/baseUtils/StoreUtils";
 
 export default {
   name: "DashboardCard",
-  created() {
-    if (StoreUtils.rootGetters("user/getIfUserHasCreatedCompany") === false) {
-      RouterUtils.changeRouteTo(RouterUtils.routes.company.CREATE_COMPANY);
-    }
-  },
   methods: {
     goToCustomerDetails() {
       RouterUtils.changeRouteTo(RouterUtils.routes.company.COMPANY_DETAILS);
