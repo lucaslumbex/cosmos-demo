@@ -1,7 +1,6 @@
 <template>
-  <InnerLayout page-title="Account Officers">
+  <InnerLayout page-title="">
     <div>
-      <p>{{ currentOfficer }}</p>
       <AccountOfficerInfoTable />
     </div>
   </InnerLayout>
