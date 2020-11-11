@@ -5,16 +5,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
     height: 100%;
-    font-family: "Mulish", sans-serif;
 }
 
 body {
     background-size: cover;
     background: #ffffff;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
     line-height: 1.3;
     margin: 0;
@@ -38,327 +40,1180 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     /*background: #90A4AE;*/
-    background: #ca0302;
-    border-radius: 0;
+    background: #de5f5d;
+    border-radius: 30px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #ca0302;
+    background: #d42e2b;
 }
+
 .text-ellipse {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.section-header{}
+.section-header{
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+    text-align: center;
+    color: #C95252;
+}
 .section-padding{}
-
-::placeholder {
-    opacity: 50%;
+.text-ellipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.bold{
-    font-weight: 800;
+/*General END*/
+/*AppHeader*/
+.app-header{
+    background-color: transparent;
+    margin-bottom: 4vh;
 }
-p {
+.app-header .navbar{
+    padding: 25px 0;
+    background-color: transparent !important;
+}
+.app-header .navbar-brand{}
+.app-header .logo img{
+    height: 45px;
+}
+.app-header .navbar-toggler{
+    font-size: 22px;
+    color: red;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+.app-header .hamburger-menu{}
+.app-header .hamburger-menu svg{height: 45px;width: 45px;}
+.app-header .navbar-toggler .navbar-toggler-icon{}
+.app-header .navbar-collapse{}
+.app-header .navbar-nav{
+    margin-left: 7%;
+}
+.app-header .nav-item{
+    padding: 5px 0 !important;
+    margin-left: 10px;
+}
+.app-header .nav-link{
+    color: #4A6C6F !important;
+    padding: 0 30px !important;
     font-size: 14px;
     line-height: 18px;
-    color: #424242;
+    font-weight: 600;
+}
+.app-header .nav-link{
+    padding: 10px 15px !important;
+    transition: .3s ease-in-out all;
+}
+.app-header .nav-link.active{
+    color: #CF1C1B !important;
+    border-bottom: 2px solid #CF1C1B;
+}
+.app-header .nav-link:focus, .app-header .nav-link:hover {
+    color: #CF1C1B !important;
+}
+.app-header .app-header-btn{
+    background: #ffffff;
+    margin-left: 30px;
+    color: #DD5F5E;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px 24px;
+    transition: all ease-in-out .3s;
+    border: 1px solid #DD5F5E;
 }
 
-/*General END*/
+.app-header .app-header-btn:hover{
+    background-color: #f7dcdb;
+}
+.app-header .app-header-btn2:hover{
+    background-color: #f7dcdb;
+}
 
-/*AppForm*/
-.app-form{
+.app-header .app-header-btn.alt{
+    background: #DD5F5E;
+    margin-left: 25px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px 30px;
+    transition: all ease-in-out .3s;
+    border: 1px solid #DD5F5E;
+}
+.app-header .app-header-btn.alt:hover{
+    color: #f7dcdb;
+}
+.app-header .app-header-btn.alt span{
+    color: inherit;
+}
+.app-header .app-header-btn.alt svg{
+    height: 22px;
+}
+/*AppHeader END*/
+.landing-page{
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/baas/laninfbg.png);
+    background-size: cover;
+    height: 90vh;
     padding: 0 6%;
+    margin-bottom: 0;
+    overflow-x: hidden;
 }
-.app-form .intro-img{
+.other-page{
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/junior/landing-bg.png);
+    background-color: #C95252;
+    background-size: cover;
+    height: 40vh;
+    padding: 0 8%;
+}
+.page-title {
     margin-top: 10vh;
+    color: #f7dcdb;
 }
-.app-form .intro-img img{width: 80%;height: auto;}
-.app-form .intro{
-    margin-top: 5vh;
+.page-title h1{
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 800;
+    color: #ffffff;
 }
-.app-form .form-title{
+.page-title p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.header-line{
+    height: 85px;
+    width: 100%;
+}
+.rubies-transparent-logo{
+    height: 40px;
+    margin: -120px 0 0 110px;
+}
+.logo-text{
+    font-weight: 700;
+    color: #ffffff;
+    font-family: cursive;
+    margin: -95px 0 0 160px;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    margin: -50px 0 0 -85px;
+}
+.nav-item{
+    font-size: 18px;
+}
+.nav-link{
+    color: #ffffff;
+}
+a:hover {
+    color: #E18787;
+    text-decoration: none;
+}
+
+.header-button{
+    border-radius: 60px;
+    padding: 3px 15px 5px 15px;
+    font-size: 14px;
+    color: #E18787;
+    margin-top: -5%;
+    background-color: #ffffff;
+    font-weight: 600;
+    border: 2px solid #E18787;
+}
+.signupbtn{
+    display: flex;
+    margin-top: -10%;
+    margin-left: 14%;
+}
+.log-in{
+    height: 16px;
+    margin: -60px 0 0 210px;
+}
+.login-text{
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    list-style: none;
+    margin: -55px 0 0 200px;
+}
+
+.left-side{
+    margin: 20vh 0 0;
+}
+.left-intro{
+    font-weight: 900;
+    color: #263238;
+    font-size: 48px;
+    line-height: 54px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.1);
+}
+.left-text{
+    color: #838383;
+    font-size: 20px;
+    line-height: 26px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.landing-input{
+    height: 50px;
+    width: 60%;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 0;
+    padding: 15px;
+}
+.landing-btn{
+    background: #DD5F5E;
+    margin-left: 1%;
+    height: 50px;
+    color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
-    color: #DD5F5F;
-}
-.app-form label {
-    color: #424242;
-    font-size: 12px !important;
-    font-weight: 400 !important;
-    z-index: +1;
-    padding-bottom: 5px;
-    background-color: transparent;
-    font-family: 'Mulish', sans-serif !important;
-}
-.app-form input, .app-form select, .app-form textarea {
-    border-radius: 5px !important;
-    border: 1px solid #cccccc !important;
-    font-size: 14px !important;
-    line-height: 18px !important;
-    z-index: -1;
-    background-color: #ffffff !important;
-    font-family: 'Mulish', sans-serif !important;
-    padding: 10px 15px !important;
-    outline: none;
-}
-.auth-form input:focus, .auth-form select:focus, .auth-form textarea:focus {
-    border: 1px solid #ca5152 !important;
-}
-.app-form button, .app-btn{
-    background-color: hsl(0, 54%, 94%) !important;
-    font-size: 32px  !important;
-    border-radius: 5px  !important;
-    padding: 5px 30px  !important;
-    color: #ca5152  !important;
-    width: 100%  !important;
-    margin: 15px 0 0 !important;
-    text-align: center  !important;
-    border: none !important;
-    transition: all ease-in-out .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-.app-form button:hover, .app-btn:hover{
-    background-color: #ca5152 !important;
-}
-.app-form button span, .app-btn span {
-    font-weight: bolder;
-    font-size: 16px;
-    text-align: center;
-    display: block;
-    width: 100%;
-    z-index: 1;
-    position: relative;
-}
-
-.app-form button::before, .app-btn::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
-    transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
-    background-color: #ca5152;
-    opacity: 0;
-}
-
-.app-form button:hover span, .app-btn:hover span{
-    color: #ffffff;
-}
-
-.app-form button:hover::before, .app-btn:hover::before{
-    opacity: 1;
-    transition-duration: .85s;
-    transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
-}
-
-.form-back-btn {position: absolute;top: 40px;}
-.form-back-btn:hover {
-}
-.form-back-btn svg {
-    fill: #959595;
-    height: 18px;
-}
-
-
-/*select product*/
-.app-form.products {}
-.app-form .products .product{
-    background-color: #FDF5F5;
     border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px 25px;
+    min-width: 70px;
+    transition: all ease-in-out .3s;
+    border: 1px solid #DD5F5E;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-top: 5px;
 }
-.app-form .products .product .top{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.right-side{
+    margin: 5vh 0 0;
+    text-align: right;
 }
-.app-form .products .product .top .icon{}
-.app-form .products .product .top .icon img{
-    height: 40px;
+.landing-left-pic{
+    width: 80%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
 }
-.app-form .products .product .top .price{
-    color: #DD5F5F;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 8px;
+.review-page{
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/baas/Multiple-Bg.png);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh 8% 14vh;
+    position: relative;
+    z-index: 0;
 }
-.app-form .products .product .title{
+.review-left{
+    margin: 0vh 0;
+}
+.object-pic1{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.review-right{
+    margin: 22vh 0;
+    padding-left: 6%;
+}
+.second-feature-section{
+
+}
+.review-right2{
+    margin: 16vh 5vw;
+}
+.review-left2{
+    margin: 20vh 0;
+}
+.review-right3{
+    margin: 22vh 0;
+    padding-left: 6%;
+}
+.review-left3{
+    margin: 20vh 0;
+}
+
+.feature-head{
+    color: #263238;
+    font-size: 38px;
     font-weight: 800;
+    line-height: 42px;
+}
+
+.feature-sub{
+    color: #838383;
     font-size: 18px;
     line-height: 22px;
-    color: #606060;
-    margin-bottom: 5px;
 }
-.app-form .products .product .sub{
+
+/*AppService*/
+.financial-page{
+    padding: 0 8%;
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/baas/lastbg.png);
+    background-size: cover;
+    overflow-x: hidden;
+}
+.service-feature-head{
+    color: #263238;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 42px;
+    text-align: center;
+}
+.service-feature-sub {
+    color: #838383;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.service-box{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+.service-box .service-icon {}
+.service-box .service-icon span{}
+.service-box .service-icon span img{
+    height: 150px;
+}
+.service-box .service-title{
+    color: #222A41;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
     margin-bottom: 0;
-    color: #606060;
-    font-size: 12px;
-    line-height: 16px;
 }
-
-
-/*AppForm END*/
-/*AppHeader*/
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 20px 0;
+.service-box .service-sub{
+    color: #222A41;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-box .service-text{
+    color: #e78a88;
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 0;
+    height: 56px;
 }
-.header img {
-    height: 50px;
-}
+.service-box .service-text:hover,
+.service-box .service-text:focus{}
 
-.app-header {display: flex;padding: 30px 20px 10px 20px;}
-.app-header .menu {width: 40px;}
-.app-header .back-button {}
-.app-header .back-button:hover{}
-.app-header .back-button svg{
-    fill: #de5f5f;
-    height: 18px;
-    width: auto;
+.pricing-section{
+    padding: 15vh 8%;
 }
-.app-header .back-button:hover svg{
-    fill: #ca5152;
-}
-.app-header .nav {width: calc(100% - 40px);display: flex;justify-content: space-between;}
-.app-header .nav .info {}
-.app-header .nav .info .title {margin-bottom: 4px;margin-top: -5px;}
-.app-header .nav .info .sub {font-size: 12px;line-height: 16px;color: #757575;margin-bottom: 0;}
-.app-header .nav .info .sub .dropdown {margin-left: 10px;}
-.app-header .nav .info .sub .dropdown svg {fill: #616161;height: 8px;opacity: .7;}
-.app-header .nav .page-title {}
-.app-header .nav .action {
-}
-.app-header .nav .action a {
-}
-.app-header .nav .action a svg {height: 20px;fill: #de5f5f;}
-/*AppHeader END*/
-
-/*AppFooter*/
-.app-footer {
-}
-.app-footer p {
-}
-.app-footer p span {
-    color: #dd5f5f;
-}
-/*AppFooter END*/
-
-/*MobileSideMenu*/
-.mobile-side-menu {
-}
-.mobile-side-menu .backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-}
-
-.mobile-side-menu .menu-panel {
-    overflow-y: auto;
-    background-color: #ffffff;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    z-index: 999;
-    padding: 0;
-    width: 290px;
-}
-/*MobileSideMenu END*/
-
-/*AppSidebar*/
-.app-sidebar {
-}
-.app-sidebar .top {padding: 50px 0 20px 0;border-bottom: 1px solid #FAE5E5;}
-.app-sidebar .logo {margin-bottom: 0;padding: 0 20px;}
-.app-sidebar .logo .pie {display: inline-block;}
-.app-sidebar .logo .pie img {
-    height: 28px;
-    margin-top: -7px;
-}
-.app-sidebar .logo .text {
-    color: #707070;
+.service-feature-sub2{
+    color: #222A41;
     font-size: 20px;
+    line-height: 24px;text-align: center;
+}
+.blue-part{
+    background-color: #2a3c3f;
+    border-radius: 10px;
+    padding: 6vh 7vw 8vh;
+    background-image: url('https://assets-base.s3.amazonaws.com/img/rubies/baas/calc-bg.png');
+    background-size: cover;
+}
+.pricing-blue{
+    height: auto;
+    width: 100%;
+}
+.bluebg{
+    text-align: center;
+}
+.text-part{}
+.text1{
+    color: #80949d;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 24px;
-    text-transform: uppercase;
-    margin-left: 5px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+.text1:after{
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid #596a73; /* This creates the border. Replace black with whatever color you want. */
+}
+.text2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px 0;
+}
+.text3{
+    color: #8c9ea6;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.checkmark{
+    display: inline-grid;
+    padding: 0 0;
+}
+
+.checkmark svg{
+    height: 14px;
+    fill: none;
+    margin-right: 3px;
+}
+.text4 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 26px;
+}
+.t-text4{
+    padding: 0 20px;
+    font-size: 14px;
+    color: #80949d;
     display: inline-block;
 }
-.app-sidebar .info {
-}
-.app-sidebar .info .title {margin-top: 60px;margin-bottom: 0;padding: 0 20px;font-size: 14px;line-height: 18px;}
-.app-sidebar .info .sub {padding: 0 20px;font-size: 12px;line-height: 16px;margin-bottom: 0;color: #969696;}
 
-.app-sidebar .menu {padding: 10px 20px;}
-.app-sidebar .menu .nav {
+.text5{
+    color: #80949d;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
 }
-.app-sidebar .menu .nav-item {
+.calc{
+    margin-top: -10px;
 }
-.app-sidebar .menu .nav-link {padding: 14px 0;color: #969696;}
-.app-sidebar .menu .nav-link:hover,
-.app-sidebar .menu .nav-link:focus {
+.qty{
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #516169;
+    background-color: #314449;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 14px;
 }
-.app-sidebar .menu .nav-link.active {color: #DD5F5F;}
-.app-sidebar .menu .nav-link svg {height: 20px;width: 20px;fill: #DD5F5F;margin-right: 5px;}
-.app-sidebar .menu .nav-link.active svg {}
-.app-sidebar .menu .nav-link:hover svg,
-.app-sidebar .menu .nav-link:focus svg {
+.dashed-div{
+    border: 1px dashed  #516169;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 20px 0;
+    background-color: hsl(194deg 20% 21%);
 }
+.dashed-left{
+    text-align: center;
+    margin-top: 0;
+    border-right: 1px dashed  #516169;
+    margin-right: -15px;
+    padding: 10px 0;
+}
+.dashed-title{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+    color: #80949d;
+    margin-bottom: 5px;
+}
+.dashed-sub{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 800;
+    margin-top: 0;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.dashed-right{
+    text-align: center;
+    margin-top: 0;
+    padding: 10px 0;
+}
+.price-linkk{
+    margin-top: 7%;
+    text-align: center;
+}
+.price-link{
+    color: #31485F;
+    font-size: 20px;
+    text-align: center;
+    text-decoration:  #31485F;
+}
+/*AppService END*/
 
-.app-sidebar .action {
-}
-.app-sidebar .action .nav-link {
-}
-.app-sidebar .action .nav-link:hover,
-.app-sidebar .action .nav-link:focus {
-}
-.app-sidebar .action .nav-link svg {height: 20px;}
-/*AppSidebar END*/
+/*ProductStep*/
 
-/*InfoTray*/
-.info-tray{
-    padding: 15px 4px;
+/*documentation css*/
+.documentation-header{
+    padding: 3% 0;
 }
-/*InfoTray END*/
-
-/*AccountRecord*/
-.account-record {display: flex;position: relative;padding: 20px 20px;}
-.account-record.alt{
-    border: 1px solid rgba(221, 95, 95, .2);
-    padding: 10px 10px;
+.form-group{
+    position: relative;
+    padding-left: 20%;
 }
-.account-record .avatar {width: 60px;height: 60px;border-radius: 50%;background-color: white;border: 1px solid #DD5F5F;color: #DD5F5F;font-size: 24px;line-height: 24px;padding: 15px 0;text-align: center;}
-.account-record .info {padding: 10px;width: calc(100% - 60px);position: relative;}
-.account-record .title {
-    font-size: 16px;line-height: 20px;margin-bottom: 2px;}
-.account-record .sub {margin-bottom: 0;font-size: 12px;line-height: 15px;}
-.account-record .ico {
+.form-group .fas{
     position: absolute;
+    top: 11px;
+    padding: 9px 20px;
+    color: #DD5F5E;
+}
+.form-control{
+    width: 70%;
+    padding: 0 5%;
+    position: relative;
+}
+.fas{}
+
+.write-ups{
+    padding: 0% 20%;
+}
+.write-ups .docu-title{
+    color: #DD5F5E;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.write-ups .docu-text{
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7%;
+}
+.documentation-table{
+    padding: 0% 20%;
+}
+.mytable{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #fcf2f2;
+    border-radius: 12px;
+}
+.mytable th{
+    color: #0A0A0A;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 1%;
+}
+.mytable tr{
+    background: #FFFFFF;
+}
+.mytable tr:nth-child(odd){
+    background:#FFFFFF;
+}
+.mytable tr:nth-child(even){
+    background: #fcf2f2;
+}
+.mytable td{
+    line-height: 20px;
+    font-size: 16px;
+    padding: 2%;
+}
+.mytable .table-link{
+    text-align: center;
+}
+.table-linkee{
+    color: #DD5F5E;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.documentation-fund{
+    padding: 7% 20%;
+}
+.documentation-fund .fund-title{
+    color: #DD5F5E;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.documentation-fund .fund-sub{
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.documentation-fund .fund-text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -3%;
+}
+
+.documentation-fund .fund-text:after{
+    border-bottom: 1px solid #f0c1c1;
+    content: "";
     display: block;
-    right: 15px;
-    top: 15px;
+    width: 100%;
+    padding-top: 3%;
+    margin-left: -2%;
 }
-.account-record .ico svg {
-    height: 16px;
-    fill: #dd5f5f;
+.banklist{
+    padding: 0 20%;
+    margin-top: -5%;
+    margin-bottom: 11%;
 }
-/*AccountRecord END*/
+.banklist .bank-text1{
+    font-size: 22px;
+    line-height: 26px;
+    color: #F5A724;
+    font-weight: 600;
+}
+.banklist .bank-text2{
+    line-height: 24px;
+    font-size: 20px;
+    margin-left: 1%;
+}
+.banklist .banklist-display{
+    width: 95%;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 5%;
+    border: 1px solid #f0c1c1;
+    background-color: #fdf7f7;
+    border-radius: 5px;
+}
+.banklist .banklist-title{
+    margin-top: 5%;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.banklist .banklist-sub{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.banklist .banklist-sub:after{
+    border-bottom:  1px solid #f0c1c1;
+    content: "";
+    display: block;
+    width: 98%;
+    padding-top: 6px;
+}
+.banklist .banklist-row{
+    line-height: 22px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.banklist .banklist-row-right{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10%;
+}
+.banklist .banklist-row-right2{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 25%;
+}
+.banklist .banklist-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.banklist .banklist-text2:after{
+    border-bottom:  1px solid #f0c1c1;
+    content: "";
+    display: block;
+    width: 98%;
+    padding-top: 6px;
+}
+.banklist .banklist-text2{
+    font-size: 16px;
+    margin-left: 2%;
+    color: grey;
+    line-height: 20px;
+}
+.banklist .banklist-display2{
+    width: 95%;
+    height: 50px;
+    font-size: 16px;
+    padding: 6%;
+    color: #16C13E;
+    border: 1px solid #f0c1c1;
+    background-color: #fdf7f7;
+    border-radius: 5px;
+}
+.banklist .banklist-example{
+    margin-top: 4%;
+}
+.banklist .example-text{line-height: 22px;font-size: 18px;font-weight: 600;}
+.banklist .example-text2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-left: 60%;
+}
+.outer-div{
+    border: 1px solid #f0c1c1;
+    padding: 4%;
+    width: 95%;
+    border-radius: 5px;
+}
+.banklist .outer-div-list{
+    margin-left: 10px;
+    list-style: none;
+}
+.banklist .outer-div-list2{
+    margin-left: 10px;
+    list-style: none;
+    color:  #f0c1c1;
+}
+.banklist .example-code{
+    width: 100%;
+    height: 40vh;
+    font-size: 16px;
+    padding: 4%;
+    color: #16C13E;
+    border: 0;
+    background-color: #31485F;
+    border-radius: 5px;
+    position: relative;
+}
+.banklist .outer-div-text{
+    display: inline-flex;
+    text-decoration: none;
+    margin: -2px -7%;
+}
+.banklist .code-link{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000000;
+}
+.banklist .code-p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #da6767;
+}
+.banklist.code-link{
+    padding: 10px 15px !important;
+    transition: .3s ease-in-out all;
+}
+.banklist .code-link.active{
+    color: #CF1C1B !important;
+    border-bottom: 2px solid #CF1C1B;
+}
+.banklist .code-link:focus, .app-header .code-link:hover {
+    color: #CF1C1B !important;
+}
+.more{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: absolute;
+    margin: -4% 22vw;
+    border: 0;
+    background-color: rgba(225,225,225,0.4);
+    color: #FFFFFF;
+}
+/*documentation css END*/
+
+/*contact-us css */
+.contact-us-header{
+    padding: 0 6%;
+}
+.contact-us-landing{
+    background-color: #fcf2f2;
+    height: 100vh;
+    padding: 9% 11%;
+}
+.contact-us-landing .contact-title{
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #222A41;
+}
+.contact-us-landing .contact-sub{
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.contact-service-box{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 8% 15%;
+    margin-top: 15%;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.contact-service-box .contact-service-icon{
+    margin-top: -22%;
+}
+.contact-service-box .contact-service-pic{
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 3% 5%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.contact-service-box .contact-service-title{
+    font-size: 24px;
+    line-height: 28px;
+}
+.contact-service-box .contact-service-sub{
+    font-size: 16px;
+    line-height: 20px;
+}
+.contact-service-box .contact-service-link{
+    font-size: 14px;
+    color: #DD5F5E;
+}
+.contact-service-box .contact-service-link .right-arrow{
+    height: 15px;
+    margin-left: 3%;
+}
+
+.contact-us-contact{}
+.contact-us-contact .left-side{
+    padding: 0% 12%;
+}
+.contact-us-contact .left-side-title{
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 700;
+    color:#222A41;
+}
+.contact-us-contact .left-side-pic{
+    width: 100%;
+    height: auto;
+    margin: 6% 0;
+}
+
+.whole-form{
+    border: 1px solid #f6d5d5;
+    padding: 8% 8%;
+    margin: 23% 14%;
+    border-radius: 6px;
+}
+.form-texts{}
+.form-img{height: 40px;margin-bottom: 7%;}
+.form-text{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 3%;
+}
+.name-form{
+    width: 44%;
+    height: 40px;
+    padding-left: 1%;
+    border-radius: 6px;
+    border: 1px solid #f6d5d5;
+}
+.number-form{
+    width: 44%;
+    height: 40px;
+    padding-left: 1%;
+    border-radius: 6px;
+    margin-left: 10%;
+    border: 1px solid #f6d5d5;
+}
+.email-form{
+    width: 100%;
+    height: 40px;
+    margin-top: 6%;
+    padding-left: 1%;
+    border-radius: 6px;
+    border: 1px solid #f6d5d5;
+}
+.text-form{
+    width: 100%;
+    height: 100px;
+    margin-top: 6%;
+    padding-left: 1%;
+    border-radius: 6px;
+    border: 1px solid #f6d5d5;
+}
+.button-form{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 6%;
+    background-color: #DD5F5E;
+    color: #FFFFFF;
+    border: 0;
+    font-size: 16px;
+}
+.form-bottom-text{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 7%;
+}
+.form-bottom-link{
+    color: #D14130;
+}
+/*contact-us css END*/
+
+footer{}
+.app-footer{
+    background-size: cover;
+    padding: 8vh 8%;
+}
+.footer a{
+    color: #E18787;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: #E18787;
+}
+.footer-content{
+
+}
+.footer-item{
+    font-size: 15px;
+    line-height: 18px;
+    color: #4C2547;
+    display: block;
+    margin-bottom: 10px;
+    transition: ease-in-out all .3s;
+}
+.title{
+    color: #253337;
+    font-size: 21px;
+    text-align: left;
+    line-height: 24px;
+    font-weight: 600;
+}
+.footer-icon{
+    display: inline;
+    margin-top: 25px;
+}
+.foot-ico{
+    margin-right: 10px;
+    cursor: pointer;
+    stroke: #4C2547;
+    transition: ease-in-out all .3s;
+}
+.foot-ico.yt{
+    margin-left: -9px;
+}
+.foot-ico svg{
+    height: 45px;
+}
+.foot-ico img{
+    height: 50px;
+    width: auto;
+}
+.footer-logo-text{
+    color: #4C2547;
+    font-size: 15px;
+}
+.bottom{
+    text-align: center;
+    margin-top: 4vh;
+}
+.rubies-logo{
+    height: 45px;
+    margin-top: -15px;
+}
+
+.app-body{
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/junior/other-page-bg.png);
+    background-size: cover;
+}
+.app-body .contain{
+    margin: 0 8%;
+}
+.app-body h2{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 800;
+    font-family: inherit;
+    color: #4C2547;
+}
+.app-body h3{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: inherit;
+    color: #4C2547;
+}
+.app-body h4{
+    font-size: 22px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #4C2547;
+}
+.app-body p{
+    color: rgba(4, 5, 3, .6);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.app-body li{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.app-body .side-bar{
+    background-color: rgba(76, 38, 70, .39) !important;
+    border-radius: 20px;
+}
+.app-body .side-bar ol{}
+.app-body .side-bar ol li{}
+.app-body .side-bar ol li a{}
+.app-body .side-bar ol li a:hover{}
+
+.app-btn{
+    border: 1px solid #fff;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 20px;
+    transition: all ease-in-out .4s;
+}
+.app-btn.alt{
+    margin-left: 15px;
+    background-color: #ffffff;
+    color: #ca5152;
+}
+.app-btn:hover{
+    color: #fff;
+    background-color: #9D2928;
+    border: 1px solid #9D2928;
+}
+.app-btn.purple{
+    background-color: #ffffff;
+    color: #4c2646;
+    border: 1px solid #4c2646;
+}
+.app-btn.alt.purple{
+    color: #FFFFFF;
+    background-color: #4c2646;
+}
+
+
+/*AppPricing*/
+.app-pricing .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background: #ccc;
+}
+
+.app-pricing .nav-tabs .nav-link.active {
+    color: #495057;
+    /*background-color:#007bff !important;*/
+    border-color: transparent !important;
+}
+.app-pricing .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0rem!important;
+    border-top-right-radius: 0rem!important;
+}
+.app-pricing .tab-content>.active {
+    display: block;
+    /*background: #007bff;*/
+    min-height: 165px;
+}
+.app-pricing .nav.nav-tabs {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border-bottom: 0;
+    border-right: 1px solid transparent;
+    padding-right: 15px;
+}
+
+
+.app-pricing {
+    margin-top: 50px;
+}
+.app-pricing .nav-pills{
+    width: 100%;
+    padding: 20px 20px;
+}
+.app-pricing .nav-pills .nav-link{
+    padding: 20px 20px;
+    position: relative;
+    transition: .2s ease-in-out all;
+}
+.app-pricing .nav-pills .nav-link.active{
+    background-color: #f9dedd;
+}
+.app-pricing .nav-link .title{
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.app-pricing .nav-link.active .title{
+    color: #DD5F5E;
+}
+.app-pricing .nav-link .sub{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0;
+    color: #253337;
+}
+.app-pricing .nav-link.active .sub{
+    color: #DD5F5E;
+}
+.app-pricing .nav-link .current{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: none;
+    background-color: #DD5F5E;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    transition: ease-in-out all .2s;
+}
+.app-pricing .nav-link.active .current{
+    display: inline-block;
+}
+.app-pricing .tab-content{background-color: #de5f5d;color: #ffffff;border-radius: 12px !important;text-align: center;padding: 50px !important;}
+.pricing-tab{}
+.pricing-tab .main{
+    margin-bottom: 2px;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+}
+.pricing-tab .main-sub{
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 20px;
+}
+.pricing-tab .title{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.pricing-tab .sub{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #EEEEEE;
+}
+
+/*AppPricing End*/
+
