@@ -41,7 +41,7 @@ button{
     margin-top: 10px;
     border-radius: 5px;
     border-style: none;
-    box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 9px rgba(128, 128, 128, 0.08);
 }
 .card-parent .card-1 .icon-1{
     height: 25px;
@@ -78,7 +78,7 @@ button{
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 9px rgba(128, 128, 128, 0.08);
 }
 .card-parent .card-2 .icon-2{
     height: 25px;
@@ -96,7 +96,7 @@ button{
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    box-shadow: 7px 7px 5px rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 9px rgba(128, 128, 128, 0.08);
 }
 .card-parent .card-3 .icon-3{
     height: 25px;
