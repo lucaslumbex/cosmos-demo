@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home";
 // import Terms from "../views/Terms";
 import Dashboard from "../views/Dashboard";
+import ContactUs from "../views/ContactUs";
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,11 @@ const routes = [
   //   name: "terms",
   //   component: Terms
   // },
+  {
+    path: "/contact-us",
+    name: "contact-us",
+    component: ContactUs
+  },
   {
     path: "/",
     name: "home",

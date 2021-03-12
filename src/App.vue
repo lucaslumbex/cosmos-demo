@@ -21,10 +21,10 @@ export default {
     Loading
   },
   mounted() {
-    window.addEventListener("load", () => {
+    // window.addEventListener("load", () => {
       // run after everything is in-place
       StoreUtils.commit("loader/SET_BLOCKING_LOADER", false);
-    });
+    // });
   },
   computed: {
     ...mapState(["loader"])
