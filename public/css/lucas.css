@@ -14,16 +14,17 @@ body {
 }
 
 body {
-    background-size: cover;
-    background: #ffffff;
-    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ffffff;
     font-size: 12px;
     line-height: 1.3;
+    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/baas/contact_us.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
     margin: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga", "kern";
     text-rendering: optimizelegibility;
 }
 /* width */
@@ -40,13 +41,13 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     /*background: #90A4AE;*/
-    background: #de5f5d;
+    background: #BA271B;
     border-radius: 30px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #d42e2b;
+    background: #BA271B;
 }
 
 .text-ellipse {
@@ -60,7 +61,7 @@ body {
     line-height: 44px;
     font-weight: 400;
     text-align: center;
-    color: #C95252;
+    color: #BA271B;
 }
 .section-padding{}
 .text-ellipse {
@@ -84,7 +85,7 @@ body {
 }
 .app-header .navbar-toggler{
     font-size: 22px;
-    color: red;
+    color: #BA271B;
     border: none;
     padding: 0;
     outline: none;
@@ -112,23 +113,23 @@ body {
     transition: .3s ease-in-out all;
 }
 .app-header .nav-link.active{
-    color: #CF1C1B !important;
-    border-bottom: 2px solid #CF1C1B;
+    color: #BA271B !important;
+    border-bottom: 2px solid #BA271B;
 }
 .app-header .nav-link:focus, .app-header .nav-link:hover {
-    color: #CF1C1B !important;
+    color: #BA271B !important;
 }
 .app-header .app-header-btn{
     background: #ffffff;
     margin-left: 30px;
-    color: #DD5F5E;
+    color: #BA271B;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
     border-radius: 5px;
     padding: 8px 24px;
     transition: all ease-in-out .3s;
-    border: 1px solid #DD5F5E;
+    border: 1px solid #BA271B;
 }
 
 .app-header .app-header-btn:hover{
@@ -138,8 +139,8 @@ body {
     background-color: #f7dcdb;
 }
 
-.app-header .app-header-btn.alt{
-    background: #DD5F5E;
+.app-header .app-header-btn.alt, .app-btn{
+    background: #BA271B;
     margin-left: 25px;
     color: #FFFFFF;
     font-size: 12px;
@@ -148,9 +149,9 @@ body {
     border-radius: 5px;
     padding: 8px 30px;
     transition: all ease-in-out .3s;
-    border: 1px solid #DD5F5E;
+    border: 1px solid #BA271B;
 }
-.app-header .app-header-btn.alt:hover{
+.app-header .app-header-btn.alt:hover, .app-btn:hover{
     color: #f7dcdb;
 }
 .app-header .app-header-btn.alt span{
@@ -161,16 +162,16 @@ body {
 }
 /*AppHeader END*/
 .landing-page{
-    background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/baas/laninfbg.png);
-    background-size: cover;
-    height: 90vh;
     padding: 0 6%;
     margin-bottom: 0;
     overflow-x: hidden;
 }
+.landing-page.is-home-page{
+    height: 90vh;
+}
 .other-page{
     background-image: url(https://assets-base.s3.amazonaws.com/img/rubies/junior/landing-bg.png);
-    background-color: #C95252;
+    background-color: #BA271B;
     background-size: cover;
     height: 40vh;
     padding: 0 8%;
@@ -216,7 +217,7 @@ body {
     color: #ffffff;
 }
 a:hover {
-    color: #E18787;
+    color: #BA271B;
     text-decoration: none;
 }
 
@@ -224,11 +225,11 @@ a:hover {
     border-radius: 60px;
     padding: 3px 15px 5px 15px;
     font-size: 14px;
-    color: #E18787;
+    color: #BA271B;
     margin-top: -5%;
     background-color: #ffffff;
     font-weight: 600;
-    border: 2px solid #E18787;
+    border: 2px solid #BA271B;
 }
 .signupbtn{
     display: flex;
@@ -275,7 +276,7 @@ a:hover {
     padding: 15px;
 }
 .landing-btn{
-    background: #DD5F5E;
+    background: #BA271B;
     margin-left: 1%;
     height: 50px;
     color: #FFFFFF;
@@ -286,7 +287,7 @@ a:hover {
     padding: 15px 25px;
     min-width: 70px;
     transition: all ease-in-out .3s;
-    border: 1px solid #DD5F5E;
+    border: 1px solid #BA271B;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     margin-top: 5px;
 }
@@ -517,7 +518,7 @@ a:hover {
     margin-top: 20px;
     border-radius: 12px;
     padding: 20px 0;
-    background-color: hsl(194deg 20% 21%);
+    background-color: hsl(194, 20%, 21%);
 }
 .dashed-left{
     text-align: center;
@@ -558,26 +559,95 @@ a:hover {
 }
 /*AppService END*/
 
+/*AppJoinUs*/
+.join-us{
+    padding: 0 8%;
+}
+.join-us .header{
+    text-align: center;
+}
+.join-us .header .title{font-size: 36px;line-height: 40px;font-weight: 800;margin-bottom: 20px;color: #222A41;}
+.join-us .header .sub{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.join-us .header button{
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    line-height: 18px;
+    margin-left: 0;
+    background-color: #BA271B;
+    border: none;
+}
+
+.join-us .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+.join-us .service-box{
+    text-align: left;
+    border-radius: 6px;
+}
+.join-us .service-box .icon{
+    margin-bottom: 2px;
+}
+.join-us .service-box .icon span{border-radius: 50%;height: 36px;width: 36px;color: #fff;font-size: 16px;line-height: 20px;font-weight: 800;padding: 8px 0;text-align: center;}
+.join-us .service-box .icon.one span{
+    background-color: #698CAC;
+}
+.join-us .service-box .icon.two span{
+    background-color: #BA271B;
+}
+.join-us .service-box .icon.three span{
+    background-color: #EF7840;
+}
+.join-us .service-box .icon span{}
+.join-us .service-box .title{
+    color: #222A41;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.join-us .service-box .sub{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(34, 42, 65, .77);
+}
+.join-us .service-box .sub a{
+    color: #ba271d;
+}
+/*AppJoinUs END*/
+
 /*ProductStep*/
 
 /*documentation css*/
 .documentation-header{
     padding: 3% 0;
 }
-.form-group{
+/* .form-group{
     position: relative;
     padding-left: 20%;
-}
+} */
 .form-group .fas{
     position: absolute;
     top: 11px;
     padding: 9px 20px;
-    color: #DD5F5E;
+    color: #BA271B;
 }
 .form-control{
-    width: 70%;
+    width: 100%;
     padding: 0 5%;
     position: relative;
+    background-color: rgba(214, 214, 214, 0.3);
+    border: none;
 }
 .fas{}
 
@@ -585,7 +655,7 @@ a:hover {
     padding: 0% 20%;
 }
 .write-ups .docu-title{
-    color: #DD5F5E;
+    color: #BA271B;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -631,7 +701,7 @@ a:hover {
     text-align: center;
 }
 .table-linkee{
-    color: #DD5F5E;
+    color: #BA271B;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -641,7 +711,7 @@ a:hover {
     padding: 7% 20%;
 }
 .documentation-fund .fund-title{
-    color: #DD5F5E;
+    color: #BA271B;
     font-size: 26px;
     line-height: 30px;
     font-weight: 700;
@@ -808,11 +878,11 @@ a:hover {
     transition: .3s ease-in-out all;
 }
 .banklist .code-link.active{
-    color: #CF1C1B !important;
-    border-bottom: 2px solid #CF1C1B;
+    color: #BA271B !important;
+    border-bottom: 2px solid #BA271B;
 }
 .banklist .code-link:focus, .app-header .code-link:hover {
-    color: #CF1C1B !important;
+    color: #BA271B !important;
 }
 .more{
     font-size: 20px;
@@ -827,6 +897,9 @@ a:hover {
 /*documentation css END*/
 
 /*contact-us css */
+.contact-us {
+    padding: 0 8% 8vh;
+}
 .contact-us-header{
     padding: 0 6%;
 }
@@ -877,7 +950,7 @@ a:hover {
 }
 .contact-service-box .contact-service-link{
     font-size: 14px;
-    color: #DD5F5E;
+    color: #BA271B;
 }
 .contact-service-box .contact-service-link .right-arrow{
     height: 15px;
@@ -952,7 +1025,7 @@ a:hover {
     border-radius: 6px;
     text-align: center;
     margin-top: 6%;
-    background-color: #DD5F5E;
+    background-color: #BA271B;
     color: #FFFFFF;
     border: 0;
     font-size: 16px;
@@ -968,61 +1041,6 @@ a:hover {
     color: #D14130;
 }
 /*contact-us css END*/
-
-footer{}
-.app-footer{
-    background-size: cover;
-    padding: 8vh 8%;
-}
-.footer a{
-    color: #E18787;
-}
-.footer a:hover{
-    text-decoration: none;
-    color: #E18787;
-}
-.footer-content{
-
-}
-.footer-item{
-    font-size: 15px;
-    line-height: 18px;
-    color: #4C2547;
-    display: block;
-    margin-bottom: 10px;
-    transition: ease-in-out all .3s;
-}
-.title{
-    color: #253337;
-    font-size: 21px;
-    text-align: left;
-    line-height: 24px;
-    font-weight: 600;
-}
-.footer-icon{
-    display: inline;
-    margin-top: 25px;
-}
-.foot-ico{
-    margin-right: 10px;
-    cursor: pointer;
-    stroke: #4C2547;
-    transition: ease-in-out all .3s;
-}
-.foot-ico.yt{
-    margin-left: -9px;
-}
-.foot-ico svg{
-    height: 45px;
-}
-.foot-ico img{
-    height: 50px;
-    width: auto;
-}
-.footer-logo-text{
-    color: #4C2547;
-    font-size: 15px;
-}
 .bottom{
     text-align: center;
     margin-top: 4vh;
@@ -1163,7 +1181,7 @@ footer{}
     line-height: 22px;
 }
 .app-pricing .nav-link.active .title{
-    color: #DD5F5E;
+    color: #BA271B;
 }
 .app-pricing .nav-link .sub{
     font-size: 14px;
@@ -1172,14 +1190,14 @@ footer{}
     color: #253337;
 }
 .app-pricing .nav-link.active .sub{
-    color: #DD5F5E;
+    color: #BA271B;
 }
 .app-pricing .nav-link .current{
     height: 15px;
     width: 15px;
     border-radius: 50%;
     display: none;
-    background-color: #DD5F5E;
+    background-color: #BA271B;
     position: absolute;
     right: 20px;
     top: 40%;
@@ -1188,7 +1206,7 @@ footer{}
 .app-pricing .nav-link.active .current{
     display: inline-block;
 }
-.app-pricing .tab-content{background-color: #de5f5d;color: #ffffff;border-radius: 12px !important;text-align: center;padding: 50px !important;}
+.app-pricing .tab-content{background-color: #BA271B;color: #ffffff;border-radius: 12px !important;text-align: center;padding: 50px !important;}
 .pricing-tab{}
 .pricing-tab .main{
     margin-bottom: 2px;
@@ -1216,4 +1234,246 @@ footer{}
 }
 
 /*AppPricing End*/
+
+/*AppFooter */
+.app-footer{
+    padding: 8vh 8% 4vh 8%;
+}
+.app-footer .top{}
+.app-footer .title{
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.app-footer .top ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.app-footer .top ul li{
+    padding: 5px 0;
+}
+.app-footer .top ul li a{
+    padding: 5px 0;
+    color: #555555;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.app-footer .top ul li a:hover{
+    color: #ba271d;
+}
+.app-footer .socials{}
+.app-footer .socials span{}
+.app-footer .socials a{
+    transition: all ease-in-out .3s;
+    margin-right: 8px;
+}
+.app-footer .socials a:hover{}
+.app-footer .socials a svg{
+    fill: #555555;
+    height: 24px;
+}
+.app-footer .socials a:hover svg{
+    fill: #ba271d;
+}
+.app-footer .app-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.app-footer .app-links a{}
+.app-footer .app-links a img{
+    height: 36px;
+}
+.app-footer .bottom{
+}
+.app-footer .bottom p{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #555555;
+    line-height: 16px;
+}
+.app-footer .bottom .foot-logo{
+    height: 40px;
+}
+/*AppFooter End*/
+
+/*ContactUs */
+.redbutton {
+    height: 40px;
+    background-color:  rgb(186,39,27);
+    border-color:  rgb(186,39,27);
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight:600;
+    color: white;
+    line-height: 18px;
+    transition: all ease-in-out .3s;
+
+}
+
+.redbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 17px 50px 0 rgba(0,0,0,0.1);
+}
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main .info {
+    width: 50%;
+    text-align: left;
+}
+
+.main .info .getintouch {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 10px;
+    color: rgba(0,0,0,0.7);
+}
+
+.main .info .interested {
+    font-size: 18px;
+    line-height: 22px;
+    width: 60%;
+    text-align: left;
+    color: rgba(0,0,0,0.5);
+}
+
+.main .contactform {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 30px 0;
+
+}
+
+.main .contactform form {
+    margin: 5% 5%;
+}
+
+.main .contactform .formbutton button {
+    float: right;
+    width: 168px;
+}
+
+/*.submit {*/
+/*    outline: none;*/
+/*    width: 168px;*/
+/*    height: 40px;*/
+/*    background-color:  rgb(186,39,27);*/
+/*    border-color:  rgb(186,39,27);*/
+/*    border-width: 0;*/
+/*    border-radius: 5px;*/
+/*    font-size: 14px;*/
+/*    font-weight:600;*/
+/*    color: white;*/
+/*    line-height: 18px;*/
+/*    transition: all ease-in-out .3s;*/
+/*    float: right;*/
+/*}*/
+
+@media screen and (max-width: 1124px) {
+
+    .main {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .main .info {
+        width: 100%;
+    }
+
+    .main .contactform {
+        width: 100%;
+    }
+
+    .navbar div:not(:first-child):not(:last-child) {display: none;}
+    .navbar a.icon {
+        display: flex;
+    }
+
+
+    .main .info .interested {
+        width: 100%;
+    }
+
+    .main .info img{
+        width: 320px;
+        height: 280px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1124px) {
+
+    body {
+        padding: 0 5% 5%;
+    }
+
+    .navbar.responsive{
+        /*align-items: center;*/
+        align-content: space-evenly;
+    }
+
+    .navbar.responsive .businesslogin{
+        margin-bottom: 20px;
+    }
+
+    .main img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar.responsive div:not(:first-child):not(:last-child) {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;;
+        border-bottom: none;
+        line-height: 50px;
+        margin: 0;
+        justify-content: center;
+
+    }
+
+
+    .navbar.responsive .businesslogin {
+        padding-bottom: 20px;
+
+    }
+
+    .navbar.responsive .getstarted {
+        padding-bottom: 20px;
+
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        float: right;
+    }
+}
+/*ContactUs End*/
 
