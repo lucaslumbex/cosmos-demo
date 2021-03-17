@@ -78,6 +78,7 @@ body {
 .app-header .navbar{
     padding: 25px 0;
     background-color: transparent !important;
+    position: relative;
 }
 .app-header .navbar-brand{}
 .app-header .logo img{
@@ -93,7 +94,15 @@ body {
 .app-header .hamburger-menu{}
 .app-header .hamburger-menu svg{height: 45px;width: 45px;}
 .app-header .navbar-toggler .navbar-toggler-icon{}
-.app-header .navbar-collapse{}
+.app-header .navbar-collapse{
+    position: absolute;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: white;
+    top: 80px;
+    z-index: 999;
+    border-radius: 6px;
+}
 .app-header .navbar-nav{
     margin-left: 7%;
 }
