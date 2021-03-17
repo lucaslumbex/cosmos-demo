@@ -1,11 +1,89 @@
 /*< XS*/
 @media only screen and (min-width:0px) and (max-width: 320px) {
+    .landing-page {
+        padding: 0 2%;
+    }
+    .left-side {
+        margin: 12vh 0 0;}
+    .left-intro {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .left-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .landing-input {
+        height: 45px;
+        width: 65%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .landing-btn {
+        margin-left: 0;
+        height: 45px;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 10px;
+    }
+
+    .review-right {
+        margin: 15vh 0;
+        padding-left: 4%;
+    }
+    .feature-head {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .feature-sub {
+        color: #424242;
+        font-size: 16px;
+        line-height: 20px;}
+    .review-left2 {
+        margin: 12vh 0;}
+
     .pricing-section {
         padding: 15vh 0;
     }
     .financial-page {
         padding: 0 3%;
     }
+    .service-feature-head {
+        font-size: 28px;
+        line-height: 32px;}
+
+    .service-feature-sub {
+        color: #424242;
+        font-size: 16px;
+        line-height: 20px;}
+
+    .join-us .services {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;}
+    .app-footer .top {text-align: center;}
+    .app-footer .app-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .app-footer .socials {margin-top: 10px;}
+    .app-footer .socials a svg {
+        height: 18px;
+    }
+    .contact-us {
+        padding: 0 2% 8vh;}
+    .main .contactform form {
+        margin: 5px 0;
+    }
+    .main .contactform .formbutton button {
+        float: none;
+        width: 100%;
+    }
+    .app-footer .title {margin-top: 20px;margin-bottom: 0px;}
+
     .app-pricing .nav-pills {
         width: 60%;
         padding: 10px 10px;
@@ -51,6 +129,8 @@
         z-index: 0;
         margin-bottom: 5vh;
     }
+    .main .info img {
+        display: none;}
 }
 /*< XS END*/
 

@@ -3,7 +3,7 @@
     <div class="landing-page" :class="{'is-home-page': isHomePage}">
       <AppHeader />
       <div v-if="isHomePage" class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-none d-sm-block">
           <div class="right-side">
             <img
                 src="https://assets-base.s3.amazonaws.com/img/rubies/baas/landing-left-pic.png"
@@ -11,7 +11,7 @@
                 alt=""/>
           </div>
         </div>
-        <div class="col-12 col-md-6 d-none d-sm-block">
+        <div class="col-12 col-md-6">
 
 
           <div class="left-side">

@@ -55,7 +55,7 @@
             <a class="nav-link" href="#">DOCUMENTATIONS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">PRICING</a>
+            <a class="nav-link" @click="switchRouteTo('pricing')">PRICING</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" @click="switchRouteTo('contact-us')">CONTACT US</a>
