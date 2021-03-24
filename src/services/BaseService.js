@@ -10,8 +10,6 @@ class BaseService {
     withCredentials: false,
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "No"
     },
     timeout: 30000
   });

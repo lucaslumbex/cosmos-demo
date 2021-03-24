@@ -13,11 +13,13 @@ import * as user from "./modules/user.js";
 import * as company from "./modules/company.js";
 import * as account from "./modules/account.js";
 import * as officer from "./modules/officer.js";
+import * as contactus from  "./modules/contactus.js";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
+    contactus,
     officer,
     account,
     company,

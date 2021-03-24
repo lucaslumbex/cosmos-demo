@@ -42,6 +42,7 @@ export const mutations = {
   },
   RESET_FORM_BODY(state) {
     state.formBody = {};
+
   }
 };
 
@@ -49,6 +50,7 @@ export const actions = {
   resetForm() {
     StoreUtils.commit("form/RESET_FORM_STAGE");
     StoreUtils.commit("form/RESET_FORM_BODY");
+
   },
   goBackToPreviousStage() {
     StoreUtils.commit("form/DECREASE_FORM_STAGE_BY_ONE");
