@@ -22,7 +22,6 @@
     <list default="true" id="4dac93f6-f265-49c6-ac76-e6992532073a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/services/ContactUsServices.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/store/modules/contactus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/luminous.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/luminous.css" afterDir="false" />
@@ -146,7 +145,7 @@
       <workItem from="1616396745877" duration="517000" />
       <workItem from="1616398921243" duration="446000" />
       <workItem from="1616436061049" duration="14889000" />
-      <workItem from="1616488374347" duration="13511000" />
+      <workItem from="1616488374347" duration="14004000" />
     </task>
     <servers />
   </component>
@@ -186,6 +185,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616579069105" />
+    <state x="251" y="242" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1616608450004">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="251" y="242" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1616608450004" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1616566139499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
