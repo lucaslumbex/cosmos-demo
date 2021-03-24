@@ -34,6 +34,9 @@ class StoreUtils {
     },
     officer: {
       SET_OFFICER_INFO: "officer/setOfficerInfo"
+    },
+    form: {
+      RESET_FORM: "form/resetForm"
     }
   };
 

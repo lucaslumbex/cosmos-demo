@@ -1,4 +1,4 @@
-<template>
+ya<template>
   <AppLayout v-if="ifUserHasCreatedCompany">
     <div class="dashboard">
       <p class="welcome-text">

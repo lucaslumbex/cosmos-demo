@@ -16,6 +16,9 @@ class AppUtils {
       ADD_OFFICER: "/createOfficer",
       FETCH_ALL_OFFICERS: "/readOfficers",
       READ_SINGLE_OFFICER: "/readSingleOfficer"
+    },
+    contactus: {
+      SEND_FINTECH_MAIL: "/fintechSendMail"
     }
   };
 
