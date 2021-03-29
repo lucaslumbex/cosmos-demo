@@ -21,7 +21,7 @@
 
         </div>
         <div class="contactform">
-          <FormulateForm name="reset" @submit="submit">
+          <FormulateForm name="reset" class="vue-form" @submit="submit">
             <FormulateInput
                 name="firstName"
                 type="text"
@@ -67,7 +67,7 @@
               type="textarea"
               label="Do you have additional comments or questions?"
             />
-            <FormulateInput type="submit" label="Submit"/>
+            <FormulateInput type="submit" label="Submit" />
           </FormulateForm>
         </div>
       </div>

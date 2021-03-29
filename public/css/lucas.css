@@ -115,14 +115,22 @@ body {
     padding: 10px 15px !important;
     transition: .3s ease-in-out all;
 }
-.app-header .nav-link.active{
+.app-header .nav-link active{
     color: #BA271B !important;
     border-bottom: 2px solid #BA271B;
 }
+
 .app-header .nav-link:focus, .app-header .nav-link:hover {
     color: #BA271B !important;
+    border-bottom: 2px solid #BA271B;
+
+
 }
-.app-header .app-header-btn{
+.app-header .nav-link:active{
+    color: #BA271B !important;
+    border-bottom: 2px solid #BA271B;
+}
+.app-header  .app-header-btn{
     background: #f1f4f7;
     margin-left: 30px;
     color: #BA271B;
@@ -133,6 +141,10 @@ body {
     padding: 8px 24px;
     transition: all ease-in-out .3s;
     border: 1px solid #BA271B;
+}
+.app-header-btn alt{
+    color: white;
+    background-color: #BA271B;
 }
 
 .app-header .app-header-btn:hover{
