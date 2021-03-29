@@ -28,7 +28,7 @@
                   class="landing-input"
                   placeholder="Enter your email address"
               />
-              <button type="button" class="landing-btn">Get Started</button>
+              <button type="button" class="landing-btn"><a href="https://businessaccount.rubies.ng/register">Get Started</a></button>
             </form>
           </div>
         </div>

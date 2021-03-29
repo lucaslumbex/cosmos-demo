@@ -156,13 +156,15 @@ sup {
 }
 
 a {
-  color: #377dff;
+
+  color: #BA271B;
+  /*color: #377dff;*/
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0052ea;
+  /*color: #0052ea;*/
   text-decoration: none;
 }
 
@@ -175,6 +177,7 @@ a:not([href]):hover {
   color: inherit;
   text-decoration: none;
 }
+
 
 pre,
 code,
@@ -23881,11 +23884,41 @@ a:hover .text-hover-primary {
   height: 45px;
 }
 
-.app-header .app-header-btn.alt{
+.app-header .app-header-btn {
+  /*background-color: #BA271B;*/
   background-color: transparent;
-  color: #ffff;
+  color: #BA271B;
+  padding: 12px 60px 12px 24px;
+
+}
+
+.app-header .app-header-btn.alt{
+  background-color: #BA271B;
   padding: 12px 60px 12px 24px;
 }
+
+.app-header .app-header-btn.alt a{
+  color: white;
+}
+
+.app-header .app-header-btn.alt a:hover{
+ color: #f7dcdb;
+}
+
+.landing-btn a{
+  color: white;
+}
+.landing-btn a:hover{
+  color: lightgrey;
+}
+
+.app-btn a{
+  color: white;
+}
+.app-btn a:hover{
+  color: lightgrey;
+}
+
 .back-to-top-wrapper {
   position: absolute;
   top: 450vh;
