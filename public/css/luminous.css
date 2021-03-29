@@ -498,20 +498,28 @@
 
 /*< XL*/
 @media (min-width: 1200px) {
-    .app-footer .top {text-align: left;}
+    .app-footer .top {
+        text-align: left;
+    }
+
     .app-footer .app-links {
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
         margin-top: 10px;
     }
 
-    .app-footer .socials {margin-top: 10px;}
+    .app-footer .socials {
+        margin-top: 10px;
+    }
+
     .app-footer .socials a svg {
         height: 18px;
     }
-
-
-
-
 }
+
+
+
+
+
+
 /*< XL END*/
