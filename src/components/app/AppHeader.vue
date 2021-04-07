@@ -64,11 +64,13 @@
 
         <form class="form-inline my-2 my-lg-0">
           <!--                    <a class="app-header-btn btn">Download Now</a>-->
-          <button type="button" class="app-header-btn">
+          <button type="button" class="app-header-btn"><a href="https://businessaccount.rubies.ng/">
             Business Login
+          </a>
           </button>
-          <button type="button" class="app-header-btn alt">
+          <button type="button" class="app-header-btn alt"><a href="https://businessaccount.rubies.ng/register">
             Get Started
+          </a>
           </button>
         </form>
       </div>
