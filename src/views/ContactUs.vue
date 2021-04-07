@@ -21,44 +21,7 @@
 
         </div>
         <div class="contactform">
-          <form>
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <label for="exampleInputEmail1">First Name</label>
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col">
-                  <label for="exampleInputEmail1">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Phone Number</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputPassword1">Company Name</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Company Name">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputPassword1">Company Sector</label>
-              <input type="text" class="form-control" id="companySector" placeholder="Company Sector">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Do you have any additional comments or questions?</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <div class="formbutton">
-              <button class="redbutton">Submit</button>
-            </div>
-
-          </form>
+          <ContactUsForm></ContactUsForm>
         </div>
       </div>
     </div>
@@ -68,9 +31,10 @@
 
 <script>
 import AppLayout from "@/components/layout/AppLayout";
+import ContactUsForm from "@/components/forms/ContactUsForm";
 export default {
   name: "ContactUs",
-  components: {AppLayout}
+  components: {ContactUsForm, AppLayout}
 };
 </script>
 

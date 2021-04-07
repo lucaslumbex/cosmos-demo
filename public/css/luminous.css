@@ -36,6 +36,8 @@
         line-height: 18px;
         padding: 10px 10px;
     }
+    .landing-btn.alt{}
+
 
     .review-right {
         margin: 15vh 0;
@@ -71,7 +73,7 @@
     .join-us .services {
         grid-template-columns: repeat(1, 1fr);
         gap: 2%;}
-    .app-footer .top {text-align: center;}
+    .app-footer .top {text-align: left;}
     .app-footer .app-links {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
@@ -140,6 +142,11 @@
     }
     .main .info img {
         display: none;}
+    .price-title, .price-sub{
+        text-align: left;
+    }
+    .price-title{}
+    .price-sub{}
 }
 /*< XS END*/
 
@@ -156,6 +163,7 @@
     }
     .landing-page {
         padding: 0 2%;
+        overflow: unset;
     }
     .left-side {
         margin: 12vh 0 0;}
@@ -216,7 +224,7 @@
     .join-us .services {
         grid-template-columns: repeat(1, 1fr);
         gap: 2%;}
-    .app-footer .top {text-align: center;}
+    .app-footer .top {text-align: left;}
     .app-footer .app-links {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
@@ -228,7 +236,8 @@
         height: 18px;
     }
     .contact-us {
-        padding: 0 2% 8vh;}
+        padding: 0 2% 4vh;
+    }
     .main .contactform form {
         margin: 5px 0;
     }
@@ -285,6 +294,36 @@
     }
     .main .info img {
         display: none;}
+    .price-title, .price-sub {
+        text-align: left;
+    }
+    .price-title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .price-sub{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .section3 {
+        text-align: left;
+    }
+    .section5 {
+        display:none
+    }
+    .app-footer {
+        padding: 8vh 2% 4vh 2%;
+    }
+    .main .info .getintouch {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main .info .interested {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
 }
 /*< XS END*/
 

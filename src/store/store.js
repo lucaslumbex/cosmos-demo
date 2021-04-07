@@ -7,22 +7,14 @@ import * as notification from "./modules/baseModules/notification.js";
 import * as table from "./modules/baseModules/table.js";
 import * as form from "./modules/baseModules/form.js";
 import * as sideMenu from "./modules/baseModules/sideMenu.js";
-import * as auth from "./modules/auth.js";
-import * as user from "./modules/user.js";
+import * as contact from "./modules/contact.js";
 
-import * as company from "./modules/company.js";
-import * as account from "./modules/account.js";
-import * as officer from "./modules/officer.js";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    officer,
-    account,
-    company,
-    user,
-    auth,
+    contact,
     router,
     loader,
     notification,

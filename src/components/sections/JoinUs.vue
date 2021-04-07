@@ -1,9 +1,9 @@
 <template>
-  <div class="join-us">
+  <div id="joinUs" class="join-us">
     <div class="header">
       <p class="title">Join Rubies Business</p>
       <p class="sub">Create an account for free</p>
-      <button class="app-btn">Sign Up In Minutes</button>
+      <a target="_blank" href="https://businessbanking.rubies.ng/logon" class="app-btn">Sign Up In Minutes</a>
     </div>
     <div class="services">
       <div class="service-box">

@@ -2,8 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac93f6-f265-49c6-ac76-e6992532073a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/forms/ContactUsForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Documentation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/lucas.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/lucas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/luminous.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/luminous.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/LoginForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/enrolment/EnrolmentCompleteForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/enrolment/EnrolmentInitForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/company/CompanyAddressForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/company/CompanyDetailsForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerFirstForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerSecondForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerThirdForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/infoTrays/officer/OfficerDocumentUploadInfoTray.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/AppLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/company/ViewCompanyDetailsTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/officer/AccountOfficerInfoTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/officer/AllAccountOfficersTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContactService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BaseService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BaseService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CompanyService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/OfficerService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/baseModules/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/baseModules/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/company.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/officer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/AppUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/baseUtils/AppUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/RouterUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/baseUtils/RouterUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/S3FileUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ContactUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ContactUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Pricing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Pricing.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="LU_ContactUsFooter" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +142,7 @@
       <workItem from="1616410037225" duration="1929000" />
       <workItem from="1616483216536" duration="853000" />
       <workItem from="1617121392791" duration="913000" />
-      <workItem from="1617717519624" duration="1069000" />
+      <workItem from="1617717519624" duration="9122000" />
     </task>
     <servers />
   </component>

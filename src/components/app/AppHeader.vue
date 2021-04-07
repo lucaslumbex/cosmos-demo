@@ -47,18 +47,18 @@
       <div class="collapse navbar-collapse" id="navbarCollapseContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active">
-            <a class="nav-link active" href="#"
-            >PRODUCTS <span class="sr-only">(current)</span></a
+            <a class="nav-link" :class="{active: currentRoute.includes('home')}" @click="switchRouteTo('home')"
+            >HOME <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">DOCUMENTATIONS</a>
+            <a class="nav-link"  :class="{active: currentRoute.includes('documentation')}" @click="switchRouteTo('documentation')">DOCUMENTATIONS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" @click="switchRouteTo('pricing')">PRICING</a>
+            <a class="nav-link" :class="{active: currentRoute.includes('pricing')}" @click="switchRouteTo('pricing')">PRICING</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" @click="switchRouteTo('contact-us')">CONTACT US</a>
+            <a class="nav-link" :class="{active: currentRoute.includes('contact')}" @click="switchRouteTo('contact-us')">CONTACT US</a>
           </li>
         </ul>
 
@@ -78,11 +78,14 @@
 
 <script>
 import RouterUtils from "@/utils/baseUtils/RouterUtils";
+import StoreUtils from "@/utils/baseUtils/StoreUtils";
 
 export default {
   name: "AppHeader",
   computed: {
-
+    currentRoute() {
+      return StoreUtils.rootGetters("router/getActiveRoute")
+    }
   },
   methods: {
     switchRouteTo(routeName) {

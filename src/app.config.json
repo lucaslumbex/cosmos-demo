@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://m2nz1o078e.execute-api.us-east-1.amazonaws.com/prod",
-  "baseUrlCors": "https://cors-anywhere.herokuapp.com/https://m2nz1o078e.execute-api.us-east-1.amazonaws.com/prod"
+  "baseUrl": "https://gbwsf4rlz1.execute-api.us-east-1.amazonaws.com/prod",
+  "baseUrlCors": "https://cors-anywhere.herokuapp.com/https://gbwsf4rlz1.execute-api.us-east-1.amazonaws.com/prod"
 }
 

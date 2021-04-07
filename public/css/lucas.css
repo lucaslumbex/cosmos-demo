@@ -123,7 +123,7 @@ body {
     color: #BA271B !important;
 }
 .app-header .app-header-btn{
-    background: #f1f4f7;
+    background: #ffffff;
     margin-left: 30px;
     color: #BA271B;
     font-size: 12px;
@@ -144,7 +144,7 @@ body {
 
 .app-header .app-header-btn.alt, .app-btn{
     background: #BA271B;
-    margin-left: 25px;
+    margin-left: 0;
     color: #FFFFFF;
     font-size: 12px;
     line-height: 18px;
@@ -254,7 +254,8 @@ a:hover {
 }
 
 .left-side{
-    margin: 20vh 0 0;
+    margin: 12vh 0 0;
+    padding-left: 6%;
 }
 .left-intro{
     font-weight: 900;
@@ -282,23 +283,27 @@ a:hover {
 }
 .landing-btn{
     background: #BA271B;
-    margin-left: 1%;
+    margin-left: 0;
     height: 50px;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px 5px;
     padding: 15px 25px;
-    min-width: 70px;
+    min-width: 170px;
     transition: all ease-in-out .3s;
     border: 1px solid #BA271B;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     margin-top: 5px;
 }
+.landing-btn:hover{
+    color: #ffffff
+}
 .right-side{
-    margin: 5vh 0 0;
+    margin: 0;
     text-align: left;
+    padding: 3vh 0 0 10%;
 }
 .landing-left-pic{
     width: 80%;
@@ -382,7 +387,7 @@ a:hover {
     text-align: center;
     padding: 30px 30px;
     margin-bottom: 20px;
-    background-color: #f1f4f7;
+    background-color: #ffffff;
 }
 .service-box .service-icon {}
 .service-box .service-icon span{}
@@ -397,14 +402,14 @@ a:hover {
     margin-bottom: 0;
 }
 .service-box .service-sub{
-    color: #222A41;
-    font-size: 16px;
-    line-height: 20px;
+    color: #465686;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 .service-box .service-text{
-    color: #ba271d;
+    color: rgba(0, 0, 0, 55%);
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 0;
@@ -574,7 +579,7 @@ a:hover {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .join-us .header button{
     font-size: 14px;
@@ -652,6 +657,41 @@ a:hover {
     background-color: rgba(214, 214, 214, 0.3);
     border: none;
 }
+/*FormSetup*/
+.formulate-form{}
+.formulate-input{}
+.formulate-input-wrapper{}
+.formulate-input .formulate-input-label {
+    font-weight: 400;
+    color: #999999;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.formulate-input .formulate-input-element {max-width: unset;}
+.formulate-input{}
+
+.sml-btn button{
+    width: 140px !important;
+}
+.sml-btn .formulate-input-element--submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulate-input[data-classification='text'] input,
+.formulate-input[data-classification='text'] input,
+.formulate-input[data-classification='select'] select,
+.formulate-input[data-classification='textarea'] textarea {
+    background-color: #F3F3F3;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+/*FormSetup End*/
+
 .fas{}
 
 .write-ups{
@@ -1102,11 +1142,11 @@ a:hover {
 
 .app-btn{
     border: 1px solid #fff;
-    border-radius: 14px;
+    border-radius: 8px;
     color: #ffffff;
-    font-size: 20px;
-    line-height: 24px;
-    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 20px;
     transition: all ease-in-out .4s;
 }
 .app-btn.alt{
@@ -1294,6 +1334,7 @@ a:hover {
 }
 .app-footer .app-links a img{
     height: 36px;
+    border-radius: 6px;
 }
 .app-footer .bottom{
 }
@@ -1357,7 +1398,9 @@ a:hover {
     padding-bottom: 10px;
     color: rgba(0,0,0,0.7);
 }
-
+.main .info .getintouch p{
+    margin-bottom: 0
+}
 .main .info .interested {
     font-size: 18px;
     line-height: 22px;
@@ -1370,8 +1413,7 @@ a:hover {
     background-color: white;
     border-radius: 10px;
     width: 50%;
-    padding: 30px 0;
-
+    padding: 30px 20px;
 }
 
 .main .contactform form {
@@ -1379,8 +1421,17 @@ a:hover {
 }
 
 .main .contactform .formbutton button {
-    float: right;
-    width: 168px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.main .contactform .formbutton button span{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
 }
 
 /*.submit {*/
@@ -1732,6 +1783,7 @@ a:hover {
     }
     .card-parent{
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .card-2-content{
@@ -1741,8 +1793,8 @@ a:hover {
 
     .section4 {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: left;
     }
 
     .section4 > div{
@@ -1827,9 +1879,7 @@ a:hover {
 
 @media screen and (max-width: 500px) {
 
-    .card-2-content {
-
-    }
+    .card-2-content {background-color: #f1f4f7;}
 
     .card-2-content .card-img .card-img-container{
         width: 40px;

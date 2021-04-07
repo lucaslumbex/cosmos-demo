@@ -113,19 +113,19 @@
           <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/wallet-africa.svg" alt="wallet africa logo"></span>
         </div>
         <div class="company-2">
-          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/esusu-logo.svg" alt="wallet africa logo"></span>
+          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/esusu-logo.svg" alt="esusu logo"></span>
         </div>
         <div class="company-3">
-          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/bankly.svg" alt="wallet africa logo"></span>
+          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/bankly.svg" alt="bankly logo"></span>
         </div>
         <div class="company-4">
-          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/paystack.svg" alt="wallet africa logo"></span>
+          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/paystack.svg" alt="paystack logo"></span>
         </div>
         <div class="company-5">
-          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/baxi.svg" alt="wallet africa logo"></span>
+          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/baxi.svg" alt="baxi logo"></span>
         </div>
         <div class="company-6">
-          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/bytelabs.svg" alt="wallet africa logo"></span>
+          <span><img src="https://assets-base.s3.amazonaws.com/img/rubies/baas/bytelabs.svg" alt="bytelabs logo"></span>
         </div>
       </div>
       <div class="section5">
@@ -135,7 +135,7 @@
             and we will get back to you as soon as possible.?</div>
         </div>
         <div class="button">
-          <button>Contact Us</button>
+          <button @click="switchRouteTo('contact-us')">Contact Us</button>
         </div>
       </div>
     </div>
@@ -145,9 +145,15 @@
 
 <script>
 import AppLayout from "@/components/layout/AppLayout";
+import RouterUtils from "@/utils/baseUtils/RouterUtils";
 export default {
   name: "Pricing",
-  components: {AppLayout}
+  components: {AppLayout},
+  methods: {
+    switchRouteTo(routeName) {
+      RouterUtils.changeRouteTo(routeName);
+    }
+  }
 };
 </script>
 

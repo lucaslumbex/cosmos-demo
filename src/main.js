@@ -17,7 +17,6 @@ import "vodal/rotate.css";
 
 import VueFormulate from "@braid/vue-formulate";
 import AppAutocompleteInput from "./components/app/Inputs/AppAutocompleteInput";
-import S3FileUpload from "./utils/baseUtils/S3FileUpload";
 Vue.component("AppAutocompleteInput", AppAutocompleteInput);
 Vue.use(VueFormulate, {
   library: {
@@ -25,15 +24,6 @@ Vue.use(VueFormulate, {
       classification: "text",
       component: "AppAutocompleteInput"
     }
-  },
-  uploader: async function(file, progress, error) {
-    let uploadedImage = await S3FileUpload.uploadFileToS3BucketAsync(
-      file,
-      S3FileUpload.params.albums.STAGING,
-      progress,
-      error
-    );
-    return await uploadedImage;
   }
 });
 

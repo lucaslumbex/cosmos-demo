@@ -22,14 +22,15 @@
             <p class="left-text">
               Start receiving and disbursing payments in minutes
             </p>
-            <form>
-              <input
-                  type="text"
-                  class="landing-input"
-                  placeholder="Enter your email address"
-              />
-              <button type="button" class="landing-btn">Get Started</button>
-            </form>
+            <a href="#joinUs" type="button" class="landing-btn alt">Get Started</a>
+<!--            <form>-->
+<!--              <input-->
+<!--                  type="text"-->
+<!--                  class="landing-input"-->
+<!--                  placeholder="Enter your email address"-->
+<!--              />-->
+<!--              <button type="button" class="landing-btn">Get Started</button>-->
+<!--            </form>-->
           </div>
         </div>
       </div>
