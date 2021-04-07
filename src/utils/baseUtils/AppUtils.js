@@ -3,22 +3,8 @@ import StoreUtils from "./StoreUtils";
 
 class AppUtils {
   static urls = {
-    auth: {
-      LOGIN: "login",
-      ENROLLMENT_INITIATE: "/enrollmentInitiate",
-      ENROLLMENT_COMPLETE: "/enrollmentComplete"
-    },
-    company: {
-      CREATE_COMPANY: "/createcompany",
-      FETCH_COMPANIES: "/readCompanies"
-    },
-    officer: {
-      ADD_OFFICER: "/createOfficer",
-      FETCH_ALL_OFFICERS: "/readOfficers",
-      READ_SINGLE_OFFICER: "/readSingleOfficer"
-    },
-    contactus: {
-      SEND_FINTECH_MAIL: "/fintechSendMail"
+    contactUs: {
+      SEND_CONTACT_US_EMAIL: "/fintechSendMail"
     }
   };
 

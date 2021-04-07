@@ -21,77 +21,21 @@
 
         </div>
         <div class="contactform">
-          <FormulateForm name="reset" class="vue-form" @submit="submit">
-            <FormulateInput
-                name="firstName"
-                type="text"
-                label="First Name"
-                validation="required"
-                validation-name="First name"
-                placeholder="First Name"
-            />
-            <FormulateInput
-                name="lastName"
-                type="text"
-                label="Last Name"
-                validation="required"
-                validation-name="Last name"
-                placeholder="Last Name"
-            />
-            <FormulateInput
-                name="phoneNumber"
-                type="number"
-                label="Phone Number"
-                validation="required"
-                validation-name="Phone number"
-                placeholder="Phone Number"
-            />
-            <FormulateInput
-              name="companyName"
-              type="text"
-              label="Company name"
-              validation="required"
-              validation-name="Company Name"
-              placeholder="Company Name"
-            />
-            <FormulateInput
-              name="companySector"
-              type="text"
-              label="Company Sector"
-              validation="required"
-              validation-name="Company Sector"
-              placeholder="Company Sector"
-            />
-            <FormulateInput
-              name="comment"
-              type="textarea"
-              label="Do you have additional comments or questions?"
-            />
-            <FormulateInput type="submit" label="Submit" />
-          </FormulateForm>
+          <ContactUsForm></ContactUsForm>
         </div>
       </div>
     </div>
   </app-layout>
+
 </template>
 
 <script>
 import AppLayout from "@/components/layout/AppLayout";
-import StoreUtils from "@/utils/baseUtils/StoreUtils";
+import ContactUsForm from "@/components/forms/ContactUsForm";
 export default {
   name: "ContactUs",
-  components: {AppLayout},
-  methods: {
-    submit(data) {
-      StoreUtils.commit("form/BUILD_FORM_BODY", data);
-
-      StoreUtils.dispatch("contactus/sendFintechMail");
-      //reset form
-      this.$formulate.reset('reset')
-    }
-  }
+  components: {ContactUsForm, AppLayout}
 };
-
 </script>
 
 <style scoped></style>

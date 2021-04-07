@@ -1,7 +1,7 @@
 export const namespaced = true;
 
 export const state = {
-  activeRoute: "dashboard"
+  activeRoute: "home"
 };
 
 export const getters = {

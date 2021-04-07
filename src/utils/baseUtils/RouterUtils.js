@@ -3,27 +3,14 @@ import router from "../../router/router";
 
 class RouterUtils {
   static routes = {
-    auth: {
-      LOGIN: "login",
-      ENROLLMENT: "enrolment"
-    },
-    company: {
-      CREATE_COMPANY: "create-company",
-      ADD_COMPANY: "add-company",
-      COMPANY_DETAILS: "company-details"
-    },
-    officer: {
-      ALL_OFFICERS: "all-officers",
-      OFFICER_MORE_INFO: "officer-more-info",
-      ADD_OFFICER: "add-officer"
-    },
-    document: {
-      ALL_DOCUMENTS: "all-documents"
-    },
-    DASHBOARD: "dashboard"
+    HOME: "home",
+    DOCUMENTATION: "documentation",
+    PRICING: "pricing",
+    CONTACT_US: "contact-us",
   };
 
   static changeRouteTo(targetRoute) {
+    StoreUtils.commit("router/SET_ACTIVE_ROUTE", targetRoute);
     router.push({
       name: targetRoute
     });

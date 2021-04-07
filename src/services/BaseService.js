@@ -1,15 +1,15 @@
 import Axios from "axios";
-import { baseUrlCors } from "../app.config";
+import { baseUrl } from "../app.config";
 import LoaderUtils from "../utils/baseUtils/LoaderUtils";
 import NotificationUtils from "../utils/baseUtils/NotificationUtils";
 import ErrorUtils from "../utils/baseUtils/ErrorUtils";
 
 class BaseService {
   apiClient = Axios.create({
-    baseURL: baseUrlCors,
+    baseURL: baseUrl,
     withCredentials: false,
     headers: {
-      Accept: "application/json",
+      Accept: "application/json"
     },
     timeout: 30000
   });

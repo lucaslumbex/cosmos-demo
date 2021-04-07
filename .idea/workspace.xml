@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="4dac93f6-f265-49c6-ac76-e6992532073a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fintech.rubies.ng" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/ContactUsForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Documentation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/lucas.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/lucas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/luminous.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/luminous.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/LoginForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/enrolment/EnrolmentCompleteForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/auth/enrolment/EnrolmentInitForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/company/CompanyAddressForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/company/CompanyDetailsForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerFirstForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerSecondForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/officer/AddAccountOfficerThirdForm.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/infoTrays/officer/OfficerDocumentUploadInfoTray.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/AppLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/company/ViewCompanyDetailsTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/officer/AccountOfficerInfoTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tables/officer/AllAccountOfficersTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContactService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BaseService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BaseService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CompanyService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/OfficerService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/baseModules/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/baseModules/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/company.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/officer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/AppUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/baseUtils/AppUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/RouterUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/baseUtils/RouterUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/baseUtils/S3FileUpload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ContactUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ContactUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Pricing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Pricing.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +55,13 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="HA_ContactFormAPI" />
-              </list>
-            </value>
-          </entry>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/dev" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HA_ContactFormAPI" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +78,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,8 +139,10 @@
       <workItem from="1616395170455" duration="573000" />
       <workItem from="1616396745877" duration="517000" />
       <workItem from="1616398921243" duration="446000" />
-      <workItem from="1616436061049" duration="14889000" />
-      <workItem from="1616488374347" duration="39305000" />
+      <workItem from="1616410037225" duration="1929000" />
+      <workItem from="1616483216536" duration="853000" />
+      <workItem from="1617121392791" duration="913000" />
+      <workItem from="1617717519624" duration="9122000" />
     </task>
     <servers />
   </component>
@@ -166,35 +160,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1259" height="259" key="GridCell.Tab.0.bottom" timestamp="1616996895504">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="259" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616996895504" />
-    <state width="1259" height="259" key="GridCell.Tab.0.center" timestamp="1616996895503">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="259" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1616996895503" />
-    <state width="1259" height="259" key="GridCell.Tab.0.left" timestamp="1616996895503">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="259" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1616996895503" />
-    <state width="1259" height="259" key="GridCell.Tab.0.right" timestamp="1616996895504">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="259" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1616996895504" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1616579069105">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616579069105" />
-    <state x="251" y="242" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1616608450004">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="251" y="242" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1616608450004" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1616566139499">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1616566139499" />
   </component>
 </project>

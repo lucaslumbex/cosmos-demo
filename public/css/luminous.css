@@ -36,6 +36,8 @@
         line-height: 18px;
         padding: 10px 10px;
     }
+    .landing-btn.alt{}
+
 
     .review-right {
         margin: 15vh 0;
@@ -56,17 +58,6 @@
     .pricing-section {
         padding: 15vh 0;
     }
-    .section3{
-        text-align: left;
-    }
-    .section4 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        background-color: #f1f4f7;
-    }
     .financial-page {
         padding: 0 3%;
     }
@@ -82,123 +73,21 @@
     .join-us .services {
         grid-template-columns: repeat(1, 1fr);
         gap: 2%;}
-
-
-    /*App Footer begins*/
-    .app-footer .top {
-        text-align: left;
-    }
+    .app-footer .top {text-align: left;}
     .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 5px;
         margin-top: 10px;
     }
 
-    .app-footer .socials {
-        margin-top: 10px;
-
-    }
+    .app-footer .socials {margin-top: 10px;}
     .app-footer .socials a svg {
         height: 18px;
     }
-
-    /*AppFooter pasted*/
-    .app-footer{
-        padding: 8vh 8% 4vh 8%;
-    }
-
-    .app-footer .title{
-        color: #000000;
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: 600;
-    }
-    .app-footer .top ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .app-footer .top ul li{
-        padding: 5px 0;
-    }
-    .app-footer .top ul li a{
-        padding: 5px 0;
-        color: #555555;
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 400;
-    }
-    .app-footer .top ul li a:hover{
-        color: #ba271d;
-    }
-    .app-footer .socials{}
-    .app-footer .socials span{
-        margin-bottom: 10px;
-        display: inline-block;
-    }
-    .app-footer .socials a{
-        transition: all ease-in-out .3s;
-        margin-right: 8px;
-    }
-    .app-footer .socials a:hover{}
-    .app-footer .socials a svg{
-        fill: #555555;
-        height: 24px;
-    }
-    .app-footer .socials a:hover svg{
-        fill: #ba271d;
-    }
-    /*.app-footer .app-links{*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(3, 1fr);*/
-    /*    gap: 5px;*/
-    /*}*/
-    .app-footer .app-links a{
-        margin-bottom: 10px;
-    }
-    .app-footer .app-links a img{
-        height: 36px;
-    }
-    .app-footer .bottom{
-    }
-    .app-footer .bottom p{
-        margin-bottom: 10px;
-        font-size: 12px;
-        color: #555555;
-        line-height: 16px;
-    }
-    .app-footer .bottom .foot-logo{
-        height: 40px;
-    }
-    /*App Footer pasted ends*/
-
-    /*App Footer ends*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .contact-us {
         padding: 0 2% 8vh;}
-
-.submit-button{
-    width: 288px;
-}
-
     .main .contactform form {
         margin: 5px 0;
-        padding: 5px;
-        /*padding: 0 30px;*/
     }
     .main .contactform .formbutton button {
         float: none;
@@ -253,6 +142,11 @@
     }
     .main .info img {
         display: none;}
+    .price-title, .price-sub{
+        text-align: left;
+    }
+    .price-title{}
+    .price-sub{}
 }
 /*< XS END*/
 
@@ -269,6 +163,7 @@
     }
     .landing-page {
         padding: 0 2%;
+        overflow: unset;
     }
     .left-side {
         margin: 12vh 0 0;}
@@ -314,17 +209,6 @@
     .pricing-section {
         padding: 15vh 0;
     }
-    .section3{
-        text-align: left;
-    }
-    .section4 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        background-color: #f1f4f7;
-    }
     .financial-page {
         padding: 0 3%;
     }
@@ -342,7 +226,7 @@
         gap: 2%;}
     .app-footer .top {text-align: left;}
     .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 5px;
         margin-top: 10px;
     }
@@ -352,7 +236,8 @@
         height: 18px;
     }
     .contact-us {
-        padding: 0 2% 8vh;}
+        padding: 0 2% 4vh;
+    }
     .main .contactform form {
         margin: 5px 0;
     }
@@ -409,117 +294,67 @@
     }
     .main .info img {
         display: none;}
+    .price-title, .price-sub {
+        text-align: left;
+    }
+    .price-title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .price-sub{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .section3 {
+        text-align: left;
+    }
+    .section5 {
+        display:none
+    }
+    .app-footer {
+        padding: 8vh 2% 4vh 2%;
+    }
+    .main .info .getintouch {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main .info .interested {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
 }
 /*< XS END*/
 
 /*< SM*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .app-footer .top {text-align: left;}
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .app-footer .socials {margin-top: 10px;}
-    .app-footer .socials a svg {
-        height: 18px;
-    }
 
 }
 /*< SM END*/
 
 /*< MD*/
 @media only screen and (min-width:768px) and (max-width: 991px) {
-    .app-footer .top {text-align: left;}
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
 
-
-    .app-footer .socials {margin-top: 10px;}
-    .app-footer .socials a svg {
-        height: 18px;
-    }
 }
 /*< MD END*/
 
 /*<LG*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .app-footer .top {text-align: left;}
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .app-footer .socials {margin-top: 10px;}
-    .app-footer .socials a svg {
-        height: 18px;
-    }
-
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 /*< LG END*/
 
 /*< Special (iPad)*/
 @media only screen and (min-width: 768px)  and (min-height: 992px) {
-    .app-footer .top {text-align: left;}
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .app-footer .socials {margin-top: 10px;}
-    .app-footer .socials a svg {
-        height: 18px;
-    }
 
 }
 /*< Special (iPad) END*/
 
 /*< Special (iPad Pro)*/
 @media only screen and (min-width: 992px)  and (min-height: 992px) {
-    .app-footer .top {text-align: left;}
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
 
-    .app-footer .socials {margin-top: 10px;}
-    .app-footer .socials a svg {
-        height: 18px;
-    }
-
+}
 /*< Special (iPad Pro) END*/
 
 /*< XL*/
-@media (min-width: 1200px) {
-    .app-footer .top {
-        text-align: left;
-    }
-
-    .app-footer .app-links {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .app-footer .socials {
-        margin-top: 10px;
-    }
-
-    .app-footer .socials a svg {
-        height: 18px;
-    }
-}
-
-
-
-
-
-
+@media (min-width: 1200px) { }
 /*< XL END*/
