@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dac93f6-f265-49c6-ac76-e6992532073a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/JoinUs.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,5 +140,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1259" height="259" key="GridCell.Tab.0.bottom" timestamp="1617897716612">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="259" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617897716612" />
+    <state width="1259" height="259" key="GridCell.Tab.0.center" timestamp="1617897716611">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="259" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617897716611" />
+    <state width="1259" height="259" key="GridCell.Tab.0.left" timestamp="1617897716611">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="259" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617897716611" />
+    <state width="1259" height="259" key="GridCell.Tab.0.right" timestamp="1617897716611">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="259" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617897716611" />
   </component>
 </project>

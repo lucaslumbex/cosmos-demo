@@ -3,7 +3,7 @@
     <div class="header">
       <p class="title">Join Rubies Business</p>
       <p class="sub">Create an account for free</p>
-      <a target="_blank" href="https://businessbanking.rubies.ng/logon" class="app-btn">Sign Up In Minutes</a>
+      <a target="_blank" href="https://businessaccount.rubies.ng/register" class="app-btn">Sign Up In Minutes</a>
     </div>
     <div class="services">
       <div class="service-box">
@@ -12,7 +12,7 @@
         </p>
         <p class="title">Sign up for Rubies Business</p>
         <p class="sub">Not on Rubies Business Yet ? Open
-          an account in minutes. click <a href="#">here</a>
+          an account in minutes. click <a href="https://businessaccount.rubies.ng/register">here</a>
           to get started</p>
       </div>
 
