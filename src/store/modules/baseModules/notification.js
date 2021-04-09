@@ -20,7 +20,11 @@ export const state = {
 
 let nextId = 1;
 
-export const getters = {};
+export const getters = {
+  getNotificationModalBody: state => {
+    return state.notificationModalBody
+  }
+};
 
 export const mutations = {
   PUSH(state, notification) {

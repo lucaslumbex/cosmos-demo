@@ -2,8 +2,8 @@
   <div class="notification-modal" :class="notificationModalTypeClass">
     <vodal
       :show="notification.showNotificationModal"
-      :height="400"
-      :width="400"
+      :width="notificationModalBody.modalWidth ? notificationModalBody.modalWidth : 400"
+      :height="notificationModalBody.modalHeight ? notificationModalBody.modalHeight : 400"
       animation="zoom"
       @hide="closeNotificationModal"
     >
@@ -74,12 +74,16 @@
 <script>
 import { mapState } from "vuex";
 import NotificationUtils from "../../../utils/baseUtils/NotificationUtils";
+import StoreUtils from "@/utils/baseUtils/StoreUtils";
 export default {
   name: "NotificationModal",
   computed: {
     ...mapState(["notification"]),
     notificationModalTypeClass() {
       return `-notification-${this.notification.notificationModalBody.type}`;
+    },
+    notificationModalBody() {
+      return StoreUtils.rootGetters("notification/getNotificationModalBody")
     }
   },
   methods: {
@@ -91,51 +95,4 @@ export default {
 </script>
 
 <style scoped>
-/*Notification Modal*/
-.notification-modal {
-}
-.notification-modal.-notification-success {
-  background-color: #d6f3e9;
-  border: 1px solid #c6eee0;
-  color: #1b654a;
-}
-.notification-modal.-notification-warning {
-  color: #7d5e28;
-  background-color: #fcf0db;
-  border: 1px solid #fbeacd;
-}
-.notification-modal.-notification-error {
-  color: #7f3737;
-  background-color: #fde1e1;
-}
-.notification-modal .vodal-dialog {
-  border-radius: 12px !important;
-  padding: 0 !important;
-}
-.notification-modal .notification-modal-inner {
-  padding: 20px;
-}
-.notification-modal .notification-modal-title {
-  margin-top: 10px;
-  font-size: 22px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-.notification-modal .notification-modal-message {
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 25px;
-}
-
-.notification-modal .notification-modal-actions {
-}
-.notification-modal .notification-modal-action {
-}
-.notification-modal .notification-modal-action button {
-}
-.notification-modal .notification-modal-action button.only {
-}
-.notification-modal .notification-modal-action button.twin {
-}
-/*Notification Modal END*/
 </style>

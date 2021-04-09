@@ -79,7 +79,7 @@
 
       <div class="formbutton">
         <!--        <button >Submit</button>-->
-        <FormulateInput type="submit" class="redbutton" label="Submit" />
+        <FormulateInput type="submit" label="Submit" />
       </div>
     </FormulateForm>
   </div>

@@ -22,7 +22,7 @@
             <p class="left-text">
               Start receiving and disbursing payments in minutes
             </p>
-            <a href="#joinUs" type="button" class="landing-btn alt">Get Started</a>
+            <a href="#joinUs" type="button" class="app-btn">Get Started</a>
 <!--            <form>-->
 <!--              <input-->
 <!--                  type="text"-->

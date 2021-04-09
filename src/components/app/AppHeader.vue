@@ -64,14 +64,16 @@
 
         <form class="form-inline my-2 my-lg-0">
           <!--                    <a class="app-header-btn btn">Download Now</a>-->
-          <button type="button" class="app-header-btn"><a href="https://businessaccount.rubies.ng/">
+<!--          <button type="button" class="app-header-btn">-->
+            <a class="app-header-btn" href="https://businessaccount.rubies.ng/">
             Business Login
           </a>
-          </button>
-          <button type="button" class="app-header-btn alt"><a href="https://businessaccount.rubies.ng/register">
+<!--          </button>-->
+<!--          <button type="button" class="app-header-btn alt">-->
+            <a class="app-header-btn alt" href="https://businessaccount.rubies.ng/register">
             Get Started
           </a>
-          </button>
+<!--          </button>-->
         </form>
       </div>
     </nav>
@@ -97,4 +99,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

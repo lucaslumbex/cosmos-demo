@@ -69,11 +69,83 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/*Notification Modal*/
+.notification-modal {
+}
+.notification-modal.-notification-success {
+    background-color: #d6f3e9;
+    border: 1px solid #c6eee0;
+    color: #1b654a;
+}
+.notification-modal.-notification-warning {
+    color: #7d5e28;
+    background-color: #fcf0db;
+    border: 1px solid #fbeacd;
+}
+.notification-modal.-notification-error {
+    color: #7f3737;
+    background-color: #fde1e1;
+}
+.notification-modal .vodal-dialog {
+    border-radius: 12px !important;
+    padding: 0 !important;
+}
+.notification-modal .notification-modal-inner {
+    padding: 20px;
+}
+.notification-modal .notification-modal-title {
+    margin-top: 10px;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333333;
+}
+.notification-modal .notification-modal-message {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    color: #555555;
+}
+
+.notification-modal .notification-modal-actions {
+}
+.notification-modal .notification-modal-action {}
+.notification-modal .notification-modal-action button {
+    appearance: none;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    min-width: 0;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px 16px;
+    border: none;
+}
+.notification-modal .notification-modal-action button.only {width: 100%;background-color: #BA271B !important;}
+.notification-modal .notification-modal-action button.twin {width: 100%;}
+.notification-modal .notification-modal-action button.twin.btn-danger {
+}
+.notification-modal .notification-modal-action button.twin.btn-success {
+
+}
+/*Notification Modal END*/
+
+
 /*General END*/
 /*AppHeader*/
 .app-header{
     background-color: transparent;
     margin-bottom: 4vh;
+    padding: 0 4%;
 }
 .app-header .navbar{
     padding: 25px 0;
@@ -124,19 +196,21 @@ body {
 }
 .app-header .app-header-btn{
     background: #ffffff;
-    margin-left: 30px;
+    margin-left: 5px;
     color: #BA271B;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
     border-radius: 5px;
-    padding: 8px 24px;
+    padding: 6px 20px;
     transition: all ease-in-out .3s;
     border: 1px solid #BA271B;
+    margin-bottom: 10px;
 }
 
 .app-header .app-header-btn:hover{
-    background-color: #f7dcdb;
+    background-color: #BA271B;
+    color: #ffffff;
 }
 .app-header .app-header-btn2:hover{
     background-color: #f7dcdb;
@@ -144,13 +218,13 @@ body {
 
 .app-header .app-header-btn.alt, .app-btn{
     background: #BA271B;
-    margin-left: 0;
+    margin-left: 5px;
     color: #FFFFFF;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
     border-radius: 5px;
-    padding: 8px 30px;
+    padding: 6px 20px;
     transition: all ease-in-out .3s;
     border: 1px solid #BA271B;
 }
@@ -168,7 +242,7 @@ body {
     overflow-x: hidden;
 }
 .landing-page{
-    padding: 0 6%;
+    padding: 0 0;
     margin-bottom: 0;
     overflow-x: hidden;
 }
@@ -409,7 +483,7 @@ a:hover {
     margin-bottom: 15px;
 }
 .service-box .service-text{
-    color: rgba(0, 0, 0, 55%);
+    color: rgba(0, 0, 0, .55);
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 0;
@@ -1423,9 +1497,13 @@ a:hover {
 .main .contactform .formbutton button {
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: #ba271c;
     border: none;
     text-align: center;
+    transition: all ease-in-out .3s;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 18px;
 }
 .main .contactform .formbutton button span{
     width: 100%;
@@ -1988,7 +2066,6 @@ a:hover {
         font-size: 16px;
         line-height: 20px;
         padding-top: 20px;
-
     }
 
     .section5 .section-text .section-text-2{
