@@ -1,5 +1,5 @@
 {
-  "name": "mobile-business-accounts.rubies.ng",
+  "name": "demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.4.4",
-    "aws-sdk": "^2.761.0",
+    "apexcharts": "^3.26.0",
     "axios": "^0.20.0",
     "bootstrap-vue": "^2.17.3",
     "copy-to-clipboard": "^3.3.1",
@@ -17,6 +17,7 @@
     "date-fns": "^2.16.1",
     "vodal": "^2.4.0",
     "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.0",
     "vue-router": "^3.2.0",
     "vue2-transitions": "^0.3.0",
     "vuex": "^3.4.0",

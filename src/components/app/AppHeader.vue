@@ -3,11 +3,9 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" @click="switchRouteTo('home')">
             <span class="logo">
-              <img
-                  src="https://assets-base.s3.amazonaws.com/img/rubies/baas/rubies-logo.png"
-                  alt="logo"
-              />
+              <img src="https://assets-base.s3.amazonaws.com/img/logoz.png" alt="">
             </span>
+        <span>Engagements Tracker</span>
       </a>
       <button
           class="navbar-toggler"
@@ -30,51 +28,31 @@
                 />
                 <path
                     d="M26.6663 13.3338H13.3337C12.8738 13.3338 12.5 13.7076 12.5 14.1675V15.8338C12.5 16.2937 12.8738 16.6675 13.3337 16.6675H26.6675C27.1274 16.6675 27.5012 16.2937 27.5012 15.8338V14.1675C27.5 13.7076 27.1262 13.3338 26.6663 13.3338Z"
-                    fill="#ca5152"
+                    fill="#52527a"
                 />
                 <path
                     d="M26.6663 18.3338H13.3337C12.8738 18.3338 12.5 18.7076 12.5 19.1675V20.8338C12.5 21.2937 12.8738 21.6675 13.3337 21.6675H26.6675C27.1274 21.6675 27.5012 21.2937 27.5012 20.8338V19.1675C27.5 18.7076 27.1262 18.3338 26.6663 18.3338Z"
-                    fill="#ca5152"
+                    fill="#52527a"
                 />
                 <path
                     d="M26.6663 23.3338H13.3337C12.8738 23.3338 12.5 23.7076 12.5 24.1675V25.8338C12.5 26.2937 12.8738 26.6675 13.3337 26.6675H26.6675C27.1274 26.6675 27.5012 26.2937 27.5012 25.8338V24.1675C27.5 23.7076 27.1262 23.3338 26.6663 23.3338Z"
-                    fill="#ca5152"
+                    fill="#52527a"
                 />
               </svg>
             </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapseContent">
-        <ul class="navbar-nav m-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" :class="{active: currentRoute.includes('home')}" @click="switchRouteTo('home')"
             >HOME <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link"  :class="{active: currentRoute.includes('documentation')}" @click="switchRouteTo('documentation')">DOCUMENTATIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" :class="{active: currentRoute.includes('pricing')}" @click="switchRouteTo('pricing')">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" :class="{active: currentRoute.includes('contact')}" @click="switchRouteTo('contact-us')">CONTACT US</a>
+            <a class="nav-link" href="#">Tracker</a>
           </li>
         </ul>
-
-        <form class="form-inline my-2 my-lg-0">
-          <!--                    <a class="app-header-btn btn">Download Now</a>-->
-<!--          <button type="button" class="app-header-btn">-->
-            <a class="app-header-btn" href="https://businessaccount.rubies.ng/">
-            Business Login
-          </a>
-<!--          </button>-->
-<!--          <button type="button" class="app-header-btn alt">-->
-            <a class="app-header-btn alt" href="https://businessaccount.rubies.ng/register">
-            Get Started
-          </a>
-<!--          </button>-->
-        </form>
       </div>
     </nav>
   </div>

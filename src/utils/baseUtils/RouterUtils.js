@@ -3,10 +3,7 @@ import router from "../../router/router";
 
 class RouterUtils {
   static routes = {
-    HOME: "home",
-    DOCUMENTATION: "documentation",
-    PRICING: "pricing",
-    CONTACT_US: "contact-us",
+    HOME: "home"
   };
 
   static changeRouteTo(targetRoute) {
